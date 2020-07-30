@@ -1,0 +1,39 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+.experience-information-container .experience-information-header {
+    margin-bottom: 0.5em;
+}
+
+.experience-information-container .experience-information-header .experience-title > h4 {
+    font-size: initial;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.experience-information-container .experience-information-header .experience-company {
+    font-style: italic;
+}
+
+.experience-information-container .experience-information-header .experience-company > span {
+    color: #B9A563;
+}
+
+.experience-information-container .experience-information-header .experience-company > span svg {
+    fill: none;
+}
+
+.experience-information-container .experience-information-details .ant-collapse-header {
+    padding: 0 0 0 24px !important;
+}
+
+.experience-information-container .experience-information-details .ant-collapse-header > span {
+    left: 0px !important ;
+}
+
+.experience-information-container .experience-information-details .ant-collapse-content .ant-collapse-content-box {
+    padding: 0;
+}

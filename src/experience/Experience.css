@@ -1,0 +1,50 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+#experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-label {
+    width: 15%;
+    top: -3px;
+}
+
+#experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-head {
+    width: 16px;
+    height: 16px;
+    left: calc(15% + 18px);
+    border-width: 1.5px;
+}
+
+#experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-tail {
+    height: calc(100% - 20px);
+    top: 16px;
+    left: calc(15% + 21px);
+    border-width: 1.5px;
+}
+
+#experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-content {
+    width: calc(85% - 41px);
+    left: calc(15% + 15px);
+    top: -4px;
+}
+
+
+@media all and (max-width: 576px) {
+    #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-label {
+        width: 69px;
+    }
+
+    #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-head {
+        left: 87px;
+    }
+
+    #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-tail {
+        left: 90px;
+    }
+
+    #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-content {
+        left: 83px;
+        width: calc(100% - 109px);
+    }
+}
