@@ -7,16 +7,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Layout } from 'antd';
+import Experience from './experience/Experience';
+
+import './App.css';
 
 const Content = Layout.Content;
 
-function App() {
+/**
+ * Global container of the website.
+ * 
+ * @author Antoine Orgerit
+ * @version 1.0
+ */
+export default function App() {
   return (
     <Router>
       <Layout id="global-container">
         {/*navbar goes here*/}
         <Content>
           <Switch>
+            <Route path="/experience">
+              <Experience />
+            </Route>
             <Route path="*">
               <p>No content yet.</p>
             </Route>
@@ -27,5 +39,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

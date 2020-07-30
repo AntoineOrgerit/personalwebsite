@@ -1,0 +1,34 @@
+[
+    {
+        "period": "Feb. 2020 - Jun. 2020",
+        "title": "Full Stack Developer Intern",
+        "company": "Gfi World",
+        "location": "Niort, France",
+        "description": "Implemented two modules of an internal project monitoring tool, including a financial summary and quality management overview for a selected contract.",
+        "skills": ["ReactJS", "Java EE", "Spring Boot", "JPA", "Hibernate", "RESTful API"]
+    },
+    {
+        "period": "Apr. 2019 - Jul. 2019",
+        "title": "Java Developer Intern",
+        "company": "L3i laboratory",
+        "location": "La Rochelle, France",
+        "description": "Improved Pepper’s robot interaction scenarios by introducing a new modelling based on contextual graphs and ensuring models robustness in a dedicated web editor.",
+        "skills": ["Java", "JAXB", "data modelling", "XML", "JavaScript"]
+    },
+    {
+        "period": "Apr. 2018 - Jun. 2018",
+        "title": "Android Developer Intern",
+        "company": "L3i laboratory",
+        "location": "La Rochelle, France",
+        "description": "Enhanced museum visitors experience by creating a companion mobile application and provided information visualisation to the personnel by collecting usage data.",
+        "skills": ["Android native", "Java", "Node.js", "UI design"]
+    },
+    {
+        "period": "Aug. 2016",
+        "title": "Web Developer Intern",
+        "company": "PlusCom Communication Agency",
+        "location": "La Rochelle, France",
+        "description": "Participated in several web development projects for multiple clients, mainly involving need assessment while adding or updating content and functionnalities.",
+        "skills": ["JavaScript", "PHP", "SQL", "UI design"]
+    }
+]

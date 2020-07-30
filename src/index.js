@@ -14,9 +14,7 @@ import './index.css';
 import './theme/theme.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 
