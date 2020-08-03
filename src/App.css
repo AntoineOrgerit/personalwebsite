@@ -4,7 +4,17 @@
  * license that can be found in the LICENSE file.
  */
 
-#global-container > .ant-layout-content {
+#root {
+    height: 100%;
+}
+
+#global-container .ant-layout {
+    height: calc(100vh - 64px);
+}
+
+#global-container .ant-layout .ant-layout-content {
     width: 80%;
     margin: 20px auto;
+    flex: none;
+    overflow-x: initial;
 }

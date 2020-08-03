@@ -7,9 +7,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Layout } from 'antd';
+
+import TopNavigation from './navigation/TopNavigation';
 import Experience from './experience/Experience';
 
 import './App.css';
+import SideNavigation from './navigation/SideNavigation';
 
 const Content = Layout.Content;
 
@@ -20,22 +23,25 @@ const Content = Layout.Content;
  * @version 1.0
  */
 export default function App() {
-  return (
-    <Router>
-      <Layout id="global-container">
-        {/*navbar goes here*/}
-        <Content>
-          <Switch>
-            <Route path="/experience">
-              <Experience />
-            </Route>
-            <Route path="*">
-              <p>No content yet.</p>
-            </Route>
-          </Switch>
-        </Content>
-        {/*footer goes here*/}
-      </Layout>
-    </Router>
-  );
+    return (
+        <Router>
+          <Layout id="global-container">
+            <TopNavigation />
+            <Layout>
+              <SideNavigation />
+              <Content>
+                <Switch>
+                  <Route path="/experience">
+                    <Experience />
+                  </Route>
+                  <Route path="*">
+                    <p>No content yet.</p>
+                  </Route>
+                </Switch>
+              </Content>
+            </Layout>
+            {/*footer goes here*/}
+          </Layout>
+        </Router>
+      );
 }

@@ -1,0 +1,98 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* general top navigation container style */
+
+#top-navigation-container {
+    padding: 0 10%;
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(to bottom, rgba(185, 165, 99, 0.8), rgba(185, 165, 99, 1));
+    border-image-slice: 1;
+}
+
+@media all and (max-width: 840px) {
+    #top-navigation-container {
+        padding: 0 calc((100% - 672px)/2);
+    }
+}
+
+@media all and (min-width: 1100px) {
+    #top-navigation-container {
+        padding: 0 calc((100% - 880px)/2);
+    }
+}
+
+/* menu item styles */
+
+#top-navigation-container .top-navigation-element:not(.top-navigation-logo-container),
+#top-navigation-container .top-navigation-element:not(.top-navigation-logo-container) * {
+    text-transform: uppercase;
+    letter-spacing: 1.3pt;
+    font-weight: 500;
+}
+
+#top-navigation-container .top-navigation-element a {
+    display: block;
+    height: 100%;
+}
+
+#top-navigation-container .top-navigation-element:not(.top-navigation-logo-container) a {
+    color: white;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+#top-navigation-container .top-navigation-element:not(.top-navigation-logo-container) a::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 0.5px;
+    bottom: calc(50% - 1em);
+    left: 12.5%;
+    background-color: #B9A563;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+#top-navigation-container .top-navigation-element:not(.top-navigation-logo-container) a:hover {
+    color: #B9A563;
+}
+
+#top-navigation-container .top-navigation-element:not(.top-navigation-logo-container) a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#top-navigation-container .top-navigation-element:not(:first-of-type) {
+    margin-left: 1.3em;
+}
+
+#top-navigation-container .top-navigation-element:not(:last-of-type):not(.top-navigation-logo-container) {
+    margin-right: 1.3em;
+}
+
+/* logo style */
+
+#top-navigation-container .top-navigation-logo-container h1 {
+    font-size: initial;
+    height: 64px;
+    line-height: 64px;
+    margin-bottom: initial;
+}
+
+@media all and (max-width: 710px) {
+    #top-navigation-container {
+        padding: 0;
+    }
+    #top-navigation-container>.ant-row>.ant-col:not(.top-navigation-logo-container) {
+        display: none;
+    }
+    #top-navigation-container .top-navigation-logo-container {
+        width: 100%;
+        text-align: center;
+        margin-right: 0 !important;
+    }
+}

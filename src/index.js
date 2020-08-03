@@ -10,6 +10,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import './reset.css';
+import './normalize.css';
 import './index.css';
 import './theme/theme.css';
 
