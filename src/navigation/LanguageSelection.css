@@ -1,0 +1,20 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* general button style */
+
+#language-selection-dropdown-btn {
+    padding: 0;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+#language-selection-dropdown-btn > span[role="img"] {
+    margin-left: 2px;
+}
+
+#language-selection-dropdown-btn:hover {
+    color: #B9A563;
+}
