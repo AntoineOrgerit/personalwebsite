@@ -1,0 +1,19 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+#footer {
+    width: 100%;
+    text-align: center;
+    border-top: 0.5px solid #B9A563;
+}
+
+#footer .footer-contact-container {
+    display: block;
+    max-width: 603px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+}

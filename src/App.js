@@ -10,9 +10,10 @@ import { Layout } from 'antd';
 
 import TopNavigation from './navigation/TopNavigation';
 import Experience from './experience/Experience';
+import SideNavigation from './navigation/SideNavigation';
+import Footer from './footer/Footer';
 
 import './App.css';
-import SideNavigation from './navigation/SideNavigation';
 
 const Content = Layout.Content;
 
@@ -40,7 +41,7 @@ export default function App() {
                 </Switch>
               </Content>
             </Layout>
-            {/*footer goes here*/}
+            <Footer />
           </Layout>
         </Router>
       );
