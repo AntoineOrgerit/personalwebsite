@@ -26,3 +26,12 @@
     flex: none;
     overflow-x: initial;
 }
+
+#global-container .ant-layout .ant-layout-content > div > h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.3pt;
+    color: #B9A563;
+    border-bottom: 1px solid #B9A563;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}

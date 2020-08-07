@@ -29,7 +29,7 @@ export default function TopNavigation() {
             </Col>
             <Col md>
                 <Row>
-                    <Col className="top-navigation-element" xs><Link to="/">Experience</Link></Col>
+                    <Col className="top-navigation-element" xs><Link to="/experience">Experience</Link></Col>
                     <Col className="top-navigation-element" xs><Link to="/">Education</Link></Col>
                     <Col className="top-navigation-element" xs><Link to="/">Projects</Link></Col>
                 </Row>
