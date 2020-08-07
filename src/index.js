@@ -4,18 +4,42 @@
  * license that can be found in the LICENSE file.
  */
 
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { ParallaxProvider, useController } from 'react-scroll-parallax';
 
 import './reset.css';
 import './normalize.css';
 import './index.css';
 import './theme/theme.css';
 
+/**
+ * Helps to prevent weird behaviour for parallax elements by restoring scrolling
+ * starting point at right position on page reload.
+ */
+const ParallaxCache = () => {
+  const { parallaxController } = useController();
+
+  useLayoutEffect(() => {
+    const handler = () => parallaxController.update();
+    window.addEventListener('load', handler);
+    window.addEventListener('resize', handler);
+    return () =>  {
+      window.removeEventListener('load', handler);
+      window.removeEventListener('resize', handler);
+    }
+  }, [parallaxController]);
+
+  return null;
+};
+
 ReactDOM.render(
-  <App />,
+  <ParallaxProvider>
+    <ParallaxCache />
+    <App />
+  </ParallaxProvider>,
   document.getElementById('root')
 );
 

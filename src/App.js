@@ -9,11 +9,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Layout } from 'antd';
 
 import TopNavigation from './navigation/TopNavigation';
+import Home from './home/Home';
 import Experience from './experience/Experience';
 import SideNavigation from './navigation/SideNavigation';
 import Footer from './footer/Footer';
 
 import './App.css';
+import 'animate.css/animate.min.css';
 
 const Content = Layout.Content;
 
@@ -32,7 +34,10 @@ export default function App() {
               <SideNavigation />
               <Content>
                 <Switch>
-                  <Route path="/experience">
+                  <Route exact path="/">
+                    <Home />
+                  </Route>
+                  <Route exact path="/experience">
                     <Experience />
                   </Route>
                   <Route path="*">
