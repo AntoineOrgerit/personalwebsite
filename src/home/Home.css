@@ -1,0 +1,111 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* general style of the home container */
+
+.home-container {
+    min-height: calc(100% + 40px);
+}
+
+/* custom style of parallax */
+
+.home-container .fullscreen-parallax {
+    margin-left: calc(-50vw + 50%);
+    margin-top: -75px;
+    border-bottom: 1px solid #B9A563;
+}
+
+.home-container .fullscreen-parallax .fullscreen-parallax-content {
+    text-align: center;
+}
+
+.home-container .fullscreen-parallax .fullscreen-parallax-content * {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.home-container .fullscreen-parallax .fullscreen-parallax-content div {
+    letter-spacing: 1.4pt;
+    font-size: 1rem;
+}
+
+.home-container .fullscreen-parallax .fullscreen-parallax-content h2 {
+    margin: 0;
+    letter-spacing: 2pt;
+    color: #B9A563;
+    font-size: 1.5rem;
+}
+
+/* style of the word carousel */
+
+.home-container .skills-carousel-container {
+    height: 10%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.home-container .skills-carousel-container:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.home-container .skills-carousel-container .word-carousel {
+    font-size: 1.3em;
+    letter-spacing: 1.3pt;
+    color: #B9A563;
+    text-transform: uppercase;
+    margin: 1em 0;
+    display: inline-block;
+}
+
+.home-container .skills-carousel-container .word-carousel .word-carousel-items {
+    border-bottom: 1px solid #B9A563;
+}
+
+.home-container .skills-carousel-container .word-carousel .word-carousel-items>div>div {
+    color: white;
+    padding: 0 10px 2px 10px;
+}
+
+/* home items style */
+
+@media all and (min-width: 768px) {
+    .home-item-container:not(:last-of-type) {
+        margin-bottom: 80px;
+    }
+}
+
+.home-item-container .home-item-img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-item-container .home-item-content {
+    padding: 50px 0;
+}
+
+.home-item-container .home-item-content h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.3pt;
+    color: #B9A563;
+    border-bottom: 1px solid #B9A563;
+    padding-bottom: 5px;
+}
+
+.home-item-container .home-item-content button {
+    border-radius: 0;
+}
+
+.home-item-container .home-item-content button:not(:hover) {
+    border-color: #B9A563;
+    color: #B9A563;
+}
