@@ -10,7 +10,10 @@ import { Layout, Typography, Row, Col } from 'antd';
 
 import LanguageSelection from './LanguageSelection';
 
+import { ReactComponent as LogoMiniSVG } from './resources/img/logo-mini.svg';
+
 import './TopNavigation.css';
+import Icon from '@ant-design/icons';
 
 const Header = Layout.Header;
 const { Title } = Typography;
@@ -25,7 +28,7 @@ export default function TopNavigation() {
     return <Header id="top-navigation-container">
         <Row justify="space-between" align="middle">
             <Col className="top-navigation-logo-container top-navigation-element" md>
-                <Link to="/"><Title>Antoine Orgerit</Title></Link>
+                <Link to="/"><Icon component={LogoMiniSVG} /><Title>Antoine Orger<span className="name-it-highlight">it</span></Title></Link>
             </Col>
             <Col md>
                 <Row>
