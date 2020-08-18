@@ -11,6 +11,7 @@ import { Layout } from 'antd';
 import TopNavigation from './navigation/TopNavigation';
 import Home from './home/Home';
 import Experience from './experience/Experience';
+import Education from './education/Education';
 import SideNavigation from './navigation/SideNavigation';
 import Footer from './footer/Footer';
 
@@ -39,6 +40,9 @@ export default function App() {
                   </Route>
                   <Route exact path="/experience">
                     <Experience />
+                  </Route>
+                  <Route exact path="/education">
+                    <Education />
                   </Route>
                   <Route path="*">
                     <p>No content yet.</p>
