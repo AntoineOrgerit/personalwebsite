@@ -29,15 +29,17 @@ export default function ExperienceInformation(props) {
             <Col flex="auto" className="experience-title"><Title level={4}>{experience.title}</Title></Col>
             <Col className="experience-company"><Text><Icon component={MapPinSVG} />&nbsp;{experience.company}, {experience.location}</Text></Col>
         </Row>
-        <Paragraph>{experience.description}</Paragraph>
+        <Paragraph className="experience-information-description">{experience.description}</Paragraph>
         <Paragraph className="experience-information-details">
             <Collapse ghost>
                 <Panel header="See more">
-                    {experience.description}
+                    {experience.details.map((detail, index) => {
+                        return <Paragraph key={index}>{detail}</Paragraph>;
+                    })}
                 </Panel>
             </Collapse>
         </Paragraph>
-        <Paragraph>{experience.skills.map((skill, index) => (
+        <Paragraph className="experience-information-skills">{experience.skills.map((skill, index) => (
             <Tag key={index}>{skill}</Tag>
         ))}</Paragraph>
     </div>;

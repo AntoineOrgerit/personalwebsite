@@ -5,13 +5,16 @@
  */
 
 import React from 'react';
-import { Timeline } from 'antd';
+import { Timeline, Typography } from 'antd';
 
 import ExperienceInformation from './ExperienceInformation';
 
 import './Experience.css';
 
 import experiences from './resources/data.json';
+import ScrollAnimation from 'react-animate-on-scroll';
+
+const { Title } = Typography;
 
 /**
  * Component used as the Experience web page.
@@ -31,12 +34,15 @@ export default function Experience() {
     };
 
     return <div id="experience-container">
+        <Title level={3}>Experience</Title>
         <Timeline mode="left">
             {
                 experiences.map((experience, index) => (
-                    <Timeline.Item label={formatPeriod(experience.period)} key={index}>
-                        <ExperienceInformation experience={experience} />
-                    </Timeline.Item>
+                    <ScrollAnimation key={index} animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
+                        <Timeline.Item label={formatPeriod(experience.period)}>
+                            <ExperienceInformation experience={experience} />
+                        </Timeline.Item>
+                    </ScrollAnimation>
                 ))
             }
         </Timeline>
