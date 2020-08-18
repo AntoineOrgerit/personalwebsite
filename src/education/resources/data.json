@@ -1,0 +1,16 @@
+[
+    {
+        "type": "en_master",
+        "title": "MSc Computer Science in Software Engineering",
+        "result": "Upper Second Class Honours - C.M.I. labelled",
+        "description": "blabla",
+        "link": "#"
+    },
+    {
+        "type": "normal",
+        "title": "French Scientific Baccalaureate",
+        "result": "Mention Bien (With Merit)",
+        "description": "Obtained with further Physics and Chemistry. Equivalent of A or A* in Mathematics, Engineering and Philosophy, equivalent of B in Physics & Chemistry, English and Spanish.",
+        "link": "#"
+    }
+]

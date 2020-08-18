@@ -1,0 +1,9 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+ #education-container .education-item:not(:last-of-type) {
+     margin-bottom: 3em;
+ }

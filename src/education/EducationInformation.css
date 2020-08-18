@@ -1,0 +1,30 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+.education-item {
+    position: relative;
+}
+
+.education-item h4 {
+    margin-bottom: 0 !important;
+}
+
+@media all and (min-width: 711px) {
+    .education-item .education-diploma-link {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.education-item .education-result {
+    color: #B9A563;
+    font-size: 1.25em;
+}
+
+.education-item .education-description {
+    margin-bottom: 0;
+}
