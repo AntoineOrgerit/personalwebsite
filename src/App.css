@@ -7,16 +7,35 @@
 /* general layout style */
 
 #root {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-height: 100vh;
+}
+
+#root::before {
+    content: "";
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
+    background-image: url('./resources/logo-background.svg');
+    background-position: center center;
+    background-size: min(50vh, 70vw);
+    background-repeat: no-repeat;
+    background-attachment: local;
 }
 
 #global-container {
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 #global-container .ant-layout {
     flex-grow: 1;
+    background: transparent;
 }
 
 #global-container .ant-layout .ant-layout-content {
