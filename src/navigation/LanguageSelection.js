@@ -21,8 +21,8 @@ export default function LanguageSelection() {
     const { i18n } = useTranslation();
 
     const menu = <Menu>
-        <Menu.Item onClick={() => i18n.changeLanguage("en")}>EN</Menu.Item>
-        <Menu.Item onClick={() => i18n.changeLanguage("fr")}>FR</Menu.Item>
+        <Menu.Item className="language-option" onClick={() => i18n.changeLanguage("en")}>EN</Menu.Item>
+        <Menu.Item className="language-option" onClick={() => i18n.changeLanguage("fr")}>FR</Menu.Item>
     </Menu>;
 
     return <Dropdown overlay={menu} placement="bottomCenter">

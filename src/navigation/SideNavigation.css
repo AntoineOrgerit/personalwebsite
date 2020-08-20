@@ -31,13 +31,13 @@
     }
 }
 
-#side-navigation-container:not(.ant-layout-sider-collapsed) .ant-layout-sider-zero-width-trigger {
+#side-navigation-container:not(.collapsed) .ant-layout-sider-zero-width-trigger {
     color: #B9A563;
 }
 
 /* updating content accessibility on visible menu */
 
-#side-navigation-container:not(.ant-layout-sider-collapsed)+.ant-layout-content {
+#side-navigation-container:not(.collapsed)+.ant-layout-content {
     opacity: 0.5;
     pointer-events: none;
     user-select: none;
@@ -46,11 +46,11 @@
 
 /* general menu and menu item style */
 
-#side-navigation-container.ant-layout-sider-collapsed .ant-menu-inline-collapsed {
+#side-navigation-container .ant-layout-sider-collapsed .ant-menu-inline-collapsed {
     width: inherit;
 }
 
-#side-navigation-container.ant-layout-sider-collapsed .ant-menu-inline-collapsed .ant-menu-item {
+#side-navigation-container .ant-layout-sider-collapsed .ant-menu-inline-collapsed .ant-menu-item {
     padding: 0 16px !important;
 }
 

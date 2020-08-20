@@ -28,8 +28,18 @@ class SideNavigation extends React.Component {
     previousMarginRight = null;
     scrollbars = null;
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            menuCollapsed: true
+        };
+
+        this.menuRef = React.createRef();
+    }
+
     componentDidMount() {
         this.element = document.querySelector('body');
+        document.addEventListener('click', this.handleClickOutside);
     }
 
     /**
@@ -38,6 +48,7 @@ class SideNavigation extends React.Component {
      * @param {Boolean} collapsed value indicating if the menu is collapsed or not
      */
     handleOnCollapse = collapsed => {
+        this.setState({ menuCollapsed: collapsed });
         if (collapsed) {
             this.element.style.overflowY = "scroll";
             enableBodyScroll(this.element);
@@ -47,24 +58,40 @@ class SideNavigation extends React.Component {
         }
     }
 
+    /**
+     * Allows to toggle the collapse state of the side menu.
+     */
+    toggleCollapsed = _ => {
+        this.setState({ menuCollapsed: !this.state.menuCollapsed });
+    }
+
+    handleClickOutside = event => {
+        if (!this.state.menuCollapsed && this.menuRef && !this.menuRef.current.contains(event.target) && !event.target.classList.contains("language-option")) {
+            this.toggleCollapsed();
+        }
+    }
+
     render() {
         const { t } = this.props;
 
-        return <Sider id="side-navigation-container" collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollapse}>
-            <Menu mode="vertical">
-                <Menu.Item><span><Link to="/">{t("menu.about")}</Link></span></Menu.Item>
-                <Menu.Item><span><Link to="/experience">{t("menu.experience")}</Link></span></Menu.Item>
-                <Menu.Item><span><Link to="/education">{t("menu.education")}</Link></span></Menu.Item>
-                <Menu.Item><span><Link to="/">{t("menu.projects")}</Link></span></Menu.Item>
-                <Menu.Divider />
-                <Menu.Item className="side-navigation-item-bottom"><span><Link to="/">Contact</Link></span></Menu.Item>
-                <Menu.Item className="side-navigation-item-bottom side-navigation-language-selection-container" disabled><LanguageSelection /></Menu.Item>
-            </Menu>
-        </Sider>;
+        return <div id="side-navigation-container" className={this.state.menuCollapsed ? "collapsed" : ""} ref={this.menuRef}>
+            <Sider collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollapse} collapsed={this.state.menuCollapsed}>
+                <Menu mode="vertical">
+                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/">{t("menu.about")}</Link></span></Menu.Item>
+                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/experience">{t("menu.experience")}</Link></span></Menu.Item>
+                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/education">{t("menu.education")}</Link></span></Menu.Item>
+                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/">{t("menu.projects")}</Link></span></Menu.Item>
+                    <Menu.Divider />
+                    <Menu.Item onClick={this.toggleCollapsed} className="side-navigation-item-bottom"><span><Link to="/">Contact</Link></span></Menu.Item>
+                    <Menu.Item className="side-navigation-item-bottom side-navigation-language-selection-container" disabled><LanguageSelection /></Menu.Item>
+                </Menu>
+            </Sider>
+        </div>;
     }
 
     componentWillUnmount() {
         clearAllBodyScrollLocks();
+        document.removeEventListener('click', this.handleClickOutside);
     }
 }
 
