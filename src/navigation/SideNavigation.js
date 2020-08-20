@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { withTranslation } from 'react-i18next';
 
 import LanguageSelection from './LanguageSelection';
 
@@ -20,9 +21,9 @@ const Sider = Layout.Sider;
  * Side navigation displayed on small screen.
  * 
  * @author Antoine Orgerit
- * @version 1.0
+ * @version 2.0
  */
-export default class SideNavigation extends React.Component {
+class SideNavigation extends React.Component {
     element = null;
     previousMarginRight = null;
     scrollbars = null;
@@ -32,12 +33,12 @@ export default class SideNavigation extends React.Component {
     }
 
     /**
-     * Hanldes menu collapse status change to prevent screen scroll if necessary.
+     * Handles menu collapse status change to prevent screen scroll if necessary.
      * 
-     * @param {Boolean} collasped value indicating if the menu is collapsed or not
+     * @param {Boolean} collapsed value indicating if the menu is collapsed or not
      */
-    handleOnCollaspe = collasped => {
-        if (collasped) {
+    handleOnCollapse = collapsed => {
+        if (collapsed) {
             this.element.style.overflowY = "scroll";
             enableBodyScroll(this.element);
         } else {
@@ -47,11 +48,14 @@ export default class SideNavigation extends React.Component {
     }
 
     render() {
-        return <Sider id="side-navigation-container" collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollaspe}>
+        const { t } = this.props;
+
+        return <Sider id="side-navigation-container" collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollapse}>
             <Menu mode="vertical">
-                <Menu.Item><span><Link to="/experience">Experience</Link></span></Menu.Item>
-                <Menu.Item><span><Link to="/education">Education</Link></span></Menu.Item>
-                <Menu.Item><span><Link to="/">Projects</Link></span></Menu.Item>
+                <Menu.Item><span><Link to="/">{t("menu.about")}</Link></span></Menu.Item>
+                <Menu.Item><span><Link to="/experience">{t("menu.experience")}</Link></span></Menu.Item>
+                <Menu.Item><span><Link to="/education">{t("menu.education")}</Link></span></Menu.Item>
+                <Menu.Item><span><Link to="/">{t("menu.projects")}</Link></span></Menu.Item>
                 <Menu.Divider />
                 <Menu.Item className="side-navigation-item-bottom"><span><Link to="/">Contact</Link></span></Menu.Item>
                 <Menu.Item className="side-navigation-item-bottom side-navigation-language-selection-container" disabled><LanguageSelection /></Menu.Item>
@@ -63,3 +67,5 @@ export default class SideNavigation extends React.Component {
         clearAllBodyScrollLocks();
     }
 }
+
+export default withTranslation()(SideNavigation);

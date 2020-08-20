@@ -1,8 +1,8 @@
 {
-    "menu": [
-        {
-            "title": "Expérience",
-            "link": "/experience"
-        }
-    ]
+    "menu": {
+        "about": "À propos",
+        "experience": "Expérience",
+        "education": "Formation",
+        "projects": "Projets"
+    }
 }

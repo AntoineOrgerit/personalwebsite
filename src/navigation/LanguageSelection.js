@@ -15,7 +15,7 @@ import './LanguageSelection.css';
  * Button displayed to change website language.
  * 
  * @author Antoine Orgerit
- * @version 1.0
+ * @version 2.0
  */
 export default function LanguageSelection() {
     const { i18n } = useTranslation();
