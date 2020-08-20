@@ -50,7 +50,7 @@ export default class SideNavigation extends React.Component {
         return <Sider id="side-navigation-container" collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollaspe}>
             <Menu mode="vertical">
                 <Menu.Item><span><Link to="/experience">Experience</Link></span></Menu.Item>
-                <Menu.Item><span><Link to="/">Education</Link></span></Menu.Item>
+                <Menu.Item><span><Link to="/education">Education</Link></span></Menu.Item>
                 <Menu.Item><span><Link to="/">Projects</Link></span></Menu.Item>
                 <Menu.Divider />
                 <Menu.Item className="side-navigation-item-bottom"><span><Link to="/">Contact</Link></span></Menu.Item>

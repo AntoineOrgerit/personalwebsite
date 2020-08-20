@@ -11,6 +11,7 @@ import { Layout } from 'antd';
 import TopNavigation from './navigation/TopNavigation';
 import Home from './home/Home';
 import Experience from './experience/Experience';
+import Education from './education/Education';
 import SideNavigation from './navigation/SideNavigation';
 import Footer from './footer/Footer';
 
@@ -26,28 +27,31 @@ const Content = Layout.Content;
  * @version 1.0
  */
 export default function App() {
-    return (
-        <Router>
-          <Layout id="global-container">
-            <TopNavigation />
-            <Layout>
-              <SideNavigation />
-              <Content>
-                <Switch>
-                  <Route exact path="/">
-                    <Home />
-                  </Route>
-                  <Route exact path="/experience">
-                    <Experience />
-                  </Route>
-                  <Route path="*">
-                    <p>No content yet.</p>
-                  </Route>
-                </Switch>
-              </Content>
-            </Layout>
-            <Footer />
-          </Layout>
-        </Router>
-      );
+  return (
+    <Router>
+      <Layout id="global-container">
+        <TopNavigation />
+        <Layout>
+          <SideNavigation />
+          <Content>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/experience">
+                <Experience />
+              </Route>
+              <Route exact path="/education">
+                <Education />
+              </Route>
+              <Route path="*">
+                <p>No content yet.</p>
+              </Route>
+            </Switch>
+          </Content>
+        </Layout>
+        <Footer />
+      </Layout>
+    </Router>
+  );
 }
