@@ -28,7 +28,6 @@
 
 .experience-information-container .experience-information-description {
     margin-bottom: 1.5em;
-    color: rgba(255, 255, 255, 0.75);
 }
 
 .experience-information-container .experience-information-details {
@@ -38,6 +37,10 @@
 .experience-information-container .experience-information-details .ant-collapse-header {
     padding: 0 0 0 24px !important;
     color: #B9A563 !important;
+}
+
+.experience-information-container .experience-information-details .ant-collapse-header:hover {
+    color: #7f7247 !important;
 }
 
 .experience-information-container .experience-information-details .ant-collapse-header > span {

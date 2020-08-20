@@ -15,12 +15,10 @@ import education from './resources/data.json';
 const { Title, Paragraph } = Typography;
 
 export default function Education() {
-    console.log(education);
     return <div id="education-container">
         <Title level={3}>Education</Title>
         {
             education.map((diploma, index) => {
-                console.log(diploma);
                 return <EducationInformation key={index} education={diploma} />
             })
         }

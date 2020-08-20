@@ -12,6 +12,20 @@
     margin-bottom: 0 !important;
 }
 
+.education-item .education-diploma-link {
+    text-align: right;
+}
+
+.education-item .education-diploma-link a.ant-btn {
+    padding: 0;
+    line-height: inherit;
+    height: fit-content;
+}
+
+.education-item>.education-diploma-link a.ant-btn {
+    line-height: 30px;
+}
+
 @media all and (min-width: 711px) {
     .education-item .education-diploma-link {
         position: absolute;
@@ -20,11 +34,91 @@
     }
 }
 
+@media all and (max-width: 710px) {
+    .education-item .education-diploma-link a.ant-btn {
+        line-height: inherit;
+        margin-top: 0.5em;
+    }
+}
+
 .education-item .education-result {
     color: #B9A563;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 .education-item .education-description {
     margin-bottom: 0;
+}
+
+.education-item .education-en-master-container {
+    margin-top: 2em;
+}
+
+.education-item .education-en-master-container h5 {
+    font-size: 120%;
+}
+
+.education-item .education-en-master-container .ant-collapse-header {
+    padding: 5px 0 5px 24px !important;
+    color: #B9A563 !important;
+    font-size: 112%;
+    line-height: 1.25 !important;
+}
+
+.education-item .education-en-master-container .ant-collapse-header:hover {
+    color: #7f7247 !important;
+}
+
+.education-item .education-en-master-container .ant-collapse-header>span {
+    left: 0px !important;
+    font-size: 13px !important;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box {
+    padding: 0 0 2em 24px !important;
+    margin-top: 6px;
+    position: relative;
+}
+
+.education-item .education-en-master-container .ant-collapse-item:last-of-type .ant-collapse-content .ant-collapse-content-box {
+    padding-bottom: 0 !important;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-result {
+    margin-bottom: 0.45em;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-description {
+    margin-bottom: 0.45em;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-description:not(.is-followed) {
+    margin-bottom: 0 !important;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-diploma-link a.ant-btn {
+    line-height: inherit;
+    height: fit-content;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects,
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-experience {
+    color: #B9A563;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects {
+    margin-bottom: 0.45em;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects:not(.is-followed) {
+    margin-bottom: 0;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-experience {
+    margin-bottom: 0;
+}
+
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects span:not([role="img"]),
+.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-experience span:not([role="img"]) {
+    margin-top: 3px;
 }
