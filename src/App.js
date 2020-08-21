@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { Layout } from 'antd';
 
 import TopNavigation from './navigation/TopNavigation';
@@ -45,7 +45,7 @@ export default function App() {
                 <Education />
               </Route>
               <Route path="*">
-                <p>No content yet.</p>
+                <Redirect to="/" />
               </Route>
             </Switch>
           </Content>
