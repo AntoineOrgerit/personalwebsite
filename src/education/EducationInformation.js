@@ -7,15 +7,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Button, Collapse, Tag } from 'antd';
+import { BranchesOutlined, PushpinOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 import './EducationInformation.css';
-import { BranchesOutlined, PushpinOutlined } from '@ant-design/icons';
 
 const { Title, Paragraph } = Typography;
 const { Panel } = Collapse;
 
 export default function EducationInformation(props) {
+    console.log(window.location.origin);
+
     const education = props.education;
+
+    const { t } = useTranslation();
 
     if (education.type !== "complementary" && ((education.type === "en_master" && education.detailedContent === undefined) || (education.type === "normal" && education.link === undefined))) {
         throw new Error("Missing information for education information.");
@@ -24,12 +29,10 @@ export default function EducationInformation(props) {
     return <div className="education-item">
         <Title level={4}>{education.title}</Title>
         <Paragraph className="education-result">{education.result}</Paragraph>
-        <Paragraph className="education-description">{education.description}</Paragraph>
         {
-            education.type === "normal" &&
-            <div className="education-diploma-link">
-                <Button type="link" href={education.link}>See the diploma</Button>
-            </div>
+            education.description.map((description, descriptionIndex) => (
+                <Paragraph key={descriptionIndex} className="education-description">{description}</Paragraph>
+            ))
         }
         {
             education.type === "en_master" &&
@@ -50,7 +53,7 @@ export default function EducationInformation(props) {
                                 }
                                 {
                                     detail.linkedProjects &&
-                                    <Paragraph className={"education-en-master-projects" + (detail.experience ? " is-followed" : "")}><BranchesOutlined /> Linked projects:&nbsp;&nbsp;
+                                    <Paragraph className={"education-projects" + (detail.experience ? " is-followed" : "")}><BranchesOutlined /> {t("education.projectsHeading")}:&nbsp;&nbsp;
                                         {
                                             detail.linkedProjects.map((project, pIndex) => (
                                                 <Tag key={pIndex} type="link" size="small"><a href={project.link}>{project.title}</a></Tag>
@@ -60,7 +63,7 @@ export default function EducationInformation(props) {
                                 }
                                 {
                                     detail.experience &&
-                                    <Paragraph className="education-en-master-experience"><PushpinOutlined /> Internships:&nbsp;&nbsp;
+                                    <Paragraph className="education-experience"><PushpinOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                                             detail.experience.map((internship, internshipIndex) => (
                                                 <Tag key={internshipIndex} type="link" size="small"><a href={internship.link}>{internship.title}</a></Tag>
@@ -71,13 +74,39 @@ export default function EducationInformation(props) {
                                 {
                                     detail.link &&
                                     <div className="education-diploma-link">
-                                        <Button type="link" href={detail.link}>See the diploma</Button>
+                                        <Button type="link" href={detail.link}>{t("education.diplomaButton")}</Button>
                                     </div>
                                 }
                             </Panel>
                         ))
                     }
                 </Collapse>
+            </div>
+        }
+        {
+            education.linkedProjects &&
+            <Paragraph className={"education-projects" + (education.experience ? " is-followed" : "")}><BranchesOutlined /> {t("education.projectsHeading")}:&nbsp;&nbsp;
+                                        {
+                    education.linkedProjects.map((project, pIndex) => (
+                        <Tag key={pIndex} type="link" size="small"><a href={project.link}>{project.title}</a></Tag>
+                    ))
+                }
+            </Paragraph>
+        }
+        {
+            education.experience &&
+            <Paragraph className="education-experience"><PushpinOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
+                                        {
+                    education.experience.map((internship, internshipIndex) => (
+                        <Tag key={internshipIndex} type="link" size="small"><a href={internship.link}>{internship.title}</a></Tag>
+                    ))
+                }
+            </Paragraph>
+        }
+        {
+            education.type === "normal" &&
+            <div className="education-diploma-link">
+                <Button type="link" href={education.link}>{t("education.diplomaButton")}</Button>
             </div>
         }
     </div>;
@@ -87,14 +116,30 @@ EducationInformation.propTypes = {
     education: PropTypes.shape({
         title: PropTypes.string.isRequired,
         result: PropTypes.string,
-        description: PropTypes.string.isRequired,
+        description: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
         type: PropTypes.string.isRequired,
         link: PropTypes.string,
         detailedContent: PropTypes.arrayOf(PropTypes.shape({
             title: PropTypes.string.isRequired,
             result: PropTypes.string,
             description: PropTypes.string.isRequired,
+            linkedProjects: PropTypes.arrayOf(PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string.isRequired
+            }).isRequired),
+            experience: PropTypes.arrayOf(PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string.isRequired
+            }).isRequired),
             link: PropTypes.string
-        }).isRequired)
+        }).isRequired),
+        linkedProjects: PropTypes.arrayOf(PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired),
+        experience: PropTypes.arrayOf(PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired),
     }).isRequired
 };

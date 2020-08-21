@@ -35,9 +35,12 @@
 }
 
 @media all and (max-width: 710px) {
+    .education-item .education-diploma-link {
+        margin-top: 1em;
+    }
+
     .education-item .education-diploma-link a.ant-btn {
         line-height: inherit;
-        margin-top: 0.5em;
     }
 }
 
@@ -47,7 +50,7 @@
 }
 
 .education-item .education-description {
-    margin-bottom: 0;
+    margin-bottom: 0.7em;
 }
 
 .education-item .education-en-master-container {
@@ -85,11 +88,11 @@
 }
 
 .education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-result {
-    margin-bottom: 0.45em;
+    margin-bottom: 0.7em;
 }
 
 .education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-description {
-    margin-bottom: 0.45em;
+    margin-bottom: 0.7em;
 }
 
 .education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-description:not(.is-followed) {
@@ -101,24 +104,24 @@
     height: fit-content;
 }
 
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects,
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-experience {
+.education-item .education-projects,
+.education-item .education-experience {
     color: #B9A563;
 }
 
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects {
-    margin-bottom: 0.45em;
+.education-item .education-projects {
+    margin-bottom: 0.7em;
 }
 
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects:not(.is-followed) {
+.education-item .education-projects:not(.is-followed) {
     margin-bottom: 0;
 }
 
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-experience {
+.education-item .education-experience {
     margin-bottom: 0;
 }
 
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-projects span:not([role="img"]),
-.education-item .education-en-master-container .ant-collapse-content .ant-collapse-content-box .education-en-master-experience span:not([role="img"]) {
+.education-item .education-projects span:not([role="img"]),
+.education-item .education-experience span:not([role="img"]) {
     margin-top: 3px;
 }

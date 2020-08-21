@@ -82,12 +82,17 @@
     },
     "education": {
         "heading": "Education",
+        "diplomaButton": "See the diploma",
+        "projectsHeading": "Projects",
+        "experienceHeading": "Internships",
         "items": [
             {
                 "type": "en_master",
                 "title": "MSc Computer Science in Software Engineering",
                 "result": "Upper Second Class Honours - C.M.I. labelled - La Rochelle University",
-                "description": "Five-year based master's degree from September 2015 to July 2020 following the bachelor's master's doctorate European educational system, with three first years dedicated to a bachelor’s degree in Software Development followed by two years of the master's degree.",
+                "description": [
+                    "Five-year based master's degree from September 2015 to July 2020 following the bachelor's master's doctorate European educational system, with three first years dedicated to a bachelor’s degree in Software Development followed by two years of the master's degree."
+                ],
                 "link": "#",
                 "detailedContent": [
                     {
@@ -96,7 +101,7 @@
                         "description": [
                             "Master's degree attended from September 2018 to June 2020 at La Rochelle University, France. Approched thematics during my studies included web services development, code quality and quality assurance, agile methodologies, concurrent and parallel programming, mobility/GIS, big data and Web 3.0.",
                             "Other topics include communication, quality and sustainable development, industrial property, digital rights, research and marketing.",
-                            "One of my side activities included the role of class representative for which I was the favored interlocutor between students and lecturers and has been involved in the Master's degree's Development Board."
+                            "One of my side activities included the role of class representative for which I was the favored interlocutor between students and lecturers and have been involved in the Master's degree's Development Board."
                         ],
                         "linkedProjects": [
                             {
@@ -132,6 +137,16 @@
                                 "link": "#"
                             }
                         ],
+                        "experience": [
+                            {
+                                "title": "Android Developer",
+                                "link": "#"
+                            },
+                            {
+                                "title": "Web Developer",
+                                "link": "#"
+                            }
+                        ],
                         "link": "#"
                     },
                     {
@@ -154,7 +169,9 @@
                 "type": "normal",
                 "title": "French Scientific Baccalaureate",
                 "result": "Mention Bien (With Merit) - June 2015",
-                "description": "Obtained with further Physics and Chemistry. Equivalent of A or A* in Mathematics, Engineering and Philosophy, equivalent of B in Physics & Chemistry, English and Spanish.",
+                "description": [
+                    "Obtained with further Physics and Chemistry. Equivalent of A or A* in Mathematics, Engineering and Philosophy, equivalent of B in Physics & Chemistry, English and Spanish."
+                ],
                 "link": "#"
             }
         ]

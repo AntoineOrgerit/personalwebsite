@@ -82,33 +82,35 @@
     },
     "education": {
         "heading": "Formation",
+        "diplomaButton": "Voir le diplôme",
+        "projectsHeading": "Projets ",
+        "experienceHeading": "Expériences ",
         "items": [
             {
                 "type": "normal",
                 "title": "Master Informatique Parcours Architecte Logiciel",
                 "result": "Mention Bien - La Rochelle Université - Juillet 2020",
                 "description": [
-                    "Master's degree attended from September 2018 to June 2020 at La Rochelle University, France. Approched thematics during my studies included web services development, code quality and quality assurance, agile methodologies, concurrent and parallel programming, mobility/GIS, big data and Web 3.0.",
-                    "Other topics include communication, quality and sustainable development, industrial property, digital rights, research and marketing.",
-                    "One of my side activities included the role of class representative for which I was the favored interlocutor between students and lecturers and has been involved in the Master's degree's Development Board."
+                    "Diplôme de Master suivi de Septembre 2018 à Juin 2020 à La Rochelle Université, France. Les thématiques abordées durant mes études incluent notamment le développement de services web, l'ingénierie logicielle et les métriques de qualité, les méthodes agiles, la programmation concurrente et parallèle, la mobilité et les SIG, le big data et le Web 3.0. Certains sujets complémentaires concernent la communication, l'informatique durable, la propriété industrielle, le droit du numérique, la recherche et le marketing.",
+                    "Par le biais des projets et des expériences entrepris durant ce cursus en addition à l'ensemble des connaissances acquises, mon parcours en Master a été un véritable tremplin vers le monde professionnel."
                 ],
                 "linkedProjects": [
                     {
-                        "title": "Archive Client for Patient File Consultation",
+                        "title": "Client d'Archivage pour des Dossiers Patient",
                         "link": "#"
                     },
                     {
-                        "title": "Géoluciole mobile app",
+                        "title": "Application Mobile Géoluciole",
                         "link": "#"
                     }
                 ],
                 "experience": [
                     {
-                        "title": "Full Stack Developer",
+                        "title": "Développeur Full Stack",
                         "link": "#"
                     },
                     {
-                        "title": "Java Developer",
+                        "title": "Développeur Java",
                         "link": "#"
                     }
                 ],
@@ -119,15 +121,16 @@
                 "title": "Cursus Master Ingénierie C.M.I.",
                 "result": "Labellisé - Juillet 2020",
                 "description": [
-                    "Complementary five-year university programme focused on communication, business, and research. Additional courses compared to the basic bachelor's master's system were attended, aiming to develop engineering competencies and the ability of abstraction."
+                    "Formation complémentaire sélective sur 5 ans focalisée sur la communication, le monde de l'entreprise et la recherche. Ce cursus m'a offert des connaissances additionnelles par rapport au parcours Licence-Master classique dans l'objectif de développer des compétences de niveau ingénieur et une capacité d'abstraction plus approfondie."
                 ],
                 "link": "#"
             },
             {
                 "type": "complementary",
-                "title": "Semestre Erasmus+ - NUIG",
+                "title": "Semestre Erasmus+",
                 "description": [
-                    "Erasmus+ semester from September to December 2017 at the National University of Ireland Galway as part of the third year of my bachelor's degree."
+                    "Semestre Erasmus+ effectué de Septembre à Décembre 2017 à la National University of Ireland Galway dans le cadre de la troisième année du diplôme de Licence.",
+                    "C'est par le biais de cette première expérience à l'étranger que ma carrière professionnelle a évoluée vers l'international tout en renforçant mes connaissances du domaine d'un point de vue tant commun que différencié."
                 ]
             },
             {
@@ -135,11 +138,22 @@
                 "title": "Licence Informatique Parcours Développement Logiciel",
                 "result": "Mention Très Bien - Juin 2018",
                 "description": [
-                    "Bachelor's degree attended from September 2015 to June 2018, including an Erasmus+ semester at NUIG."
+                    "Diplôme de Licence suivi de Septembre 2015 à Juin 2018, incluant un semestre Erasmus+ à la National University of Ireland Galway. Les différentes compétences offertes couvrent notamment les différents paradigmes de programmation (orienté objet, fonctionnelle, impérative...), le développement web, des concepts généraux et bonnes pratiques de programmation, et le développement front-end, back-end et mobile.",
+                    "Même si les plus grands apports de cette formation sont particulièrement l'appropriation de différents langages de programmation et plus généralement des principes qui les composent, elle m'a également permis de conforter mes choix de carrière tout en me donnant envie d'aller plus loin et parfois de manière plus abstraite dans les sujets composant l'informatique."
                 ],
                 "linkedProjects": [
                     {
-                        "title": "Plant health care monitoring solution",
+                        "title": "Solution de Vérification de l'État de Santé d'une Plante",
+                        "link": "#"
+                    }
+                ],
+                "experience": [
+                    {
+                        "title": "Développeur Android",
+                        "link": "#"
+                    },
+                    {
+                        "title": "Développeur Web",
                         "link": "#"
                     }
                 ],
@@ -149,7 +163,10 @@
                 "type": "normal",
                 "title": "Baccalauréat Scientifique - Sciences de l'Ingénieur",
                 "result": "Mention Bien - Juin 2015",
-                "description": "Baccalauréat Scientifique parcours Sciences de l'Ingénieur obtenu en specialité Physique-Chimie.",
+                "description": [
+                    "Baccalauréat Scientifique obtenu avec specialité Physique-Chimie.",
+                    "Le parcours Sciences de l'Ingénieur m'a permis de découvrir et de me spécialiser durant mes études supérieures dans l'informatique."
+                ],
                 "link": "#"
             }
         ]
