@@ -79,5 +79,84 @@
                 ]
             }
         ]
+    },
+    "education": {
+        "heading": "Education",
+        "items": [
+            {
+                "type": "en_master",
+                "title": "MSc Computer Science in Software Engineering",
+                "result": "Upper Second Class Honours - C.M.I. labelled - La Rochelle University",
+                "description": "Five-year based master's degree from September 2015 to July 2020 following the bachelor's master's doctorate European educational system, with three first years dedicated to a bachelor’s degree in Software Development followed by two years of the master's degree.",
+                "link": "#",
+                "detailedContent": [
+                    {
+                        "title": "MSc Computer Science in Software Engineering",
+                        "result": "Graduated with Upper Second Class Honours - July 2020",
+                        "description": [
+                            "Master's degree attended from September 2018 to June 2020 at La Rochelle University, France. Approched thematics during my studies included web services development, code quality and quality assurance, agile methodologies, concurrent and parallel programming, mobility/GIS, big data and Web 3.0.",
+                            "Other topics include communication, quality and sustainable development, industrial property, digital rights, research and marketing.",
+                            "One of my side activities included the role of class representative for which I was the favored interlocutor between students and lecturers and has been involved in the Master's degree's Development Board."
+                        ],
+                        "linkedProjects": [
+                            {
+                                "title": "Archive Client for Patient File Consultation",
+                                "link": "#"
+                            },
+                            {
+                                "title": "Géoluciole mobile app",
+                                "link": "#"
+                            }
+                        ],
+                        "experience": [
+                            {
+                                "title": "Full Stack Developer",
+                                "link": "#"
+                            },
+                            {
+                                "title": "Java Developer",
+                                "link": "#"
+                            }
+                        ],
+                        "link": "#"
+                    },
+                    {
+                        "title": "BSc Computer Science in Software Development",
+                        "result": "First Class Honours - June 2018",
+                        "description": [
+                            "Bachelor's degree attended from September 2015 to June 2018, including an Erasmus+ semester at NUIG."
+                        ],
+                        "linkedProjects": [
+                            {
+                                "title": "Plant health care monitoring solution",
+                                "link": "#"
+                            }
+                        ],
+                        "link": "#"
+                    },
+                    {
+                        "title": "Erasmus+ semester - NUIG",
+                        "description": [
+                            "Erasmus+ semester from September to December 2017 at the National University of Ireland Galway as part of the third year of my bachelor's degree."
+                        ]
+                    },
+                    {
+                        "title": "C.M.I. complementary five-year university programme",
+                        "result": "Labelled - July 2020",
+                        "description": [
+                            "Complementary five-year university programme attended from Septembre 2015 to June 2020 focused on communication, business, and research. Additional courses compared to the basic bachelor's master's system were attended, aiming to develop engineering competencies and the ability of abstraction."
+                        ],
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "type": "normal",
+                "title": "French Scientific Baccalaureate",
+                "result": "Mention Bien (With Merit) - June 2015",
+                "description": "Obtained with further Physics and Chemistry. Equivalent of A or A* in Mathematics, Engineering and Philosophy, equivalent of B in Physics & Chemistry, English and Spanish.",
+                "link": "#"
+            }
+        ]
     }
 }

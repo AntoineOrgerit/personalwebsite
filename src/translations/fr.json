@@ -79,5 +79,79 @@
                 ]
             }
         ]
+    },
+    "education": {
+        "heading": "Formation",
+        "items": [
+            {
+                "type": "normal",
+                "title": "Master Informatique Parcours Architecte Logiciel",
+                "result": "Mention Bien - La Rochelle Université - Juillet 2020",
+                "description": [
+                    "Master's degree attended from September 2018 to June 2020 at La Rochelle University, France. Approched thematics during my studies included web services development, code quality and quality assurance, agile methodologies, concurrent and parallel programming, mobility/GIS, big data and Web 3.0.",
+                    "Other topics include communication, quality and sustainable development, industrial property, digital rights, research and marketing.",
+                    "One of my side activities included the role of class representative for which I was the favored interlocutor between students and lecturers and has been involved in the Master's degree's Development Board."
+                ],
+                "linkedProjects": [
+                    {
+                        "title": "Archive Client for Patient File Consultation",
+                        "link": "#"
+                    },
+                    {
+                        "title": "Géoluciole mobile app",
+                        "link": "#"
+                    }
+                ],
+                "experience": [
+                    {
+                        "title": "Full Stack Developer",
+                        "link": "#"
+                    },
+                    {
+                        "title": "Java Developer",
+                        "link": "#"
+                    }
+                ],
+                "link": "#"
+            },
+            {
+                "type": "normal",
+                "title": "Cursus Master Ingénierie C.M.I.",
+                "result": "Labellisé - Juillet 2020",
+                "description": [
+                    "Complementary five-year university programme focused on communication, business, and research. Additional courses compared to the basic bachelor's master's system were attended, aiming to develop engineering competencies and the ability of abstraction."
+                ],
+                "link": "#"
+            },
+            {
+                "type": "complementary",
+                "title": "Semestre Erasmus+ - NUIG",
+                "description": [
+                    "Erasmus+ semester from September to December 2017 at the National University of Ireland Galway as part of the third year of my bachelor's degree."
+                ]
+            },
+            {
+                "type": "normal",
+                "title": "Licence Informatique Parcours Développement Logiciel",
+                "result": "Mention Très Bien - Juin 2018",
+                "description": [
+                    "Bachelor's degree attended from September 2015 to June 2018, including an Erasmus+ semester at NUIG."
+                ],
+                "linkedProjects": [
+                    {
+                        "title": "Plant health care monitoring solution",
+                        "link": "#"
+                    }
+                ],
+                "link": "#"
+            },
+            {
+                "type": "normal",
+                "title": "Baccalauréat Scientifique - Sciences de l'Ingénieur",
+                "result": "Mention Bien - Juin 2015",
+                "description": "Baccalauréat Scientifique parcours Sciences de l'Ingénieur obtenu en specialité Physique-Chimie.",
+                "link": "#"
+            }
+        ]
     }
 }
