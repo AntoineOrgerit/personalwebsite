@@ -62,7 +62,7 @@ class SideNavigation extends React.Component {
      * Allows to toggle the collapse state of the side menu.
      */
     toggleCollapsed = _ => {
-        this.setState({ menuCollapsed: !this.state.menuCollapsed });
+        this.handleOnCollapse(!this.state.menuCollapsed);
     }
 
     /**
