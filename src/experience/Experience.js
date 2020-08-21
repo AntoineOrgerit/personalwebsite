@@ -6,13 +6,12 @@
 
 import React from 'react';
 import { Timeline, Typography } from 'antd';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { useTranslation } from 'react-i18next';
 
 import ExperienceInformation from './ExperienceInformation';
 
 import './Experience.css';
-
-import experiences from './resources/data.json';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const { Title } = Typography;
 
@@ -23,6 +22,9 @@ const { Title } = Typography;
  * @version 1.0
  */
 export default function Experience() {
+    const { t } = useTranslation();
+
+    const experiences = t("experiences", { returnObjects: true });
 
     /**
      * Allows to format an experience period to correctly be responsive.
@@ -30,14 +32,14 @@ export default function Experience() {
      * @param {String} period the period to format
      */
     const formatPeriod = period => {
-        return period.replace(/\. /g, ".\xa0");
+        return period.replace(/(?<=\w\.|\w)\s(?=\d+)/g, "\xa0");
     };
 
     return <div id="experience-container">
-        <Title level={3}>Experience</Title>
+        <Title level={3}>{experiences.heading}</Title>
         <Timeline mode="left">
             {
-                experiences.map((experience, index) => (
+                experiences.items.map((experience, index) => (
                     <ScrollAnimation key={index} animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
                         <Timeline.Item label={formatPeriod(experience.period)}>
                             <ExperienceInformation experience={experience} />

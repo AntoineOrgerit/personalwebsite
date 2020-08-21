@@ -17,7 +17,7 @@ const { Panel } = Collapse;
 export default function EducationInformation(props) {
     const education = props.education;
 
-    if ((education.type === "en_master" && education.detailedContent === undefined) || (education.type === "normal" && education.link === undefined)) {
+    if (education.type !== "complementary" && ((education.type === "en_master" && education.detailedContent === undefined) || (education.type === "normal" && education.link === undefined))) {
         throw new Error("Missing information for education information.");
     }
 
@@ -86,7 +86,7 @@ export default function EducationInformation(props) {
 EducationInformation.propTypes = {
     education: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        result: PropTypes.string.isRequired,
+        result: PropTypes.string,
         description: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
         link: PropTypes.string,
