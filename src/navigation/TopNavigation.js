@@ -7,13 +7,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Typography, Row, Col } from 'antd';
+import Icon from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 import LanguageSelection from './LanguageSelection';
 
 import { ReactComponent as LogoMiniSVG } from './resources/img/logo-mini.svg';
 
 import './TopNavigation.css';
-import Icon from '@ant-design/icons';
 
 const Header = Layout.Header;
 const { Title } = Typography;
@@ -22,9 +23,11 @@ const { Title } = Typography;
  * Top navigation bar used on wide screens.
  * 
  * @author Antoine Orgerit
- * @version 1.0
+ * @version 2.0
  */
 export default function TopNavigation() {
+    const { t } = useTranslation();
+
     return <Header id="top-navigation-container">
         <Row justify="space-between" align="middle">
             <Col className="top-navigation-logo-container top-navigation-element" md>
@@ -32,9 +35,10 @@ export default function TopNavigation() {
             </Col>
             <Col md>
                 <Row>
-                    <Col className="top-navigation-element" xs><Link to="/experience">Experience</Link></Col>
-                    <Col className="top-navigation-element" xs><Link to="/education">Education</Link></Col>
-                    <Col className="top-navigation-element" xs><Link to="/">Projects</Link></Col>
+                    <Col className="top-navigation-element" xs><Link to={"/"}>{t("menu.about")}</Link></Col>
+                    <Col className="top-navigation-element" xs><Link to={"/experience"}>{t("menu.experience")}</Link></Col>
+                    <Col className="top-navigation-element" xs><Link to="/education">{t("menu.education")}</Link></Col>
+                    <Col className="top-navigation-element" xs><Link to="/">{t("menu.projects")}</Link></Col>
                 </Row>
             </Col>
             <Col md>

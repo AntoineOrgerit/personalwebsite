@@ -7,6 +7,7 @@
 import React from 'react';
 import { Menu, Dropdown, Button } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 import './LanguageSelection.css';
 
@@ -14,15 +15,17 @@ import './LanguageSelection.css';
  * Button displayed to change website language.
  * 
  * @author Antoine Orgerit
- * @version 1.0
+ * @version 2.0
  */
 export default function LanguageSelection() {
+    const { i18n } = useTranslation();
+
     const menu = <Menu>
-        <Menu.Item>EN</Menu.Item>
-        <Menu.Item>FR</Menu.Item>
+        <Menu.Item className="language-option" onClick={() => i18n.changeLanguage("en")}>EN</Menu.Item>
+        <Menu.Item className="language-option" onClick={() => i18n.changeLanguage("fr")}>FR</Menu.Item>
     </Menu>;
 
     return <Dropdown overlay={menu} placement="bottomCenter">
-        <Button id="language-selection-dropdown-btn" type="text" size="small">EN<DownOutlined /></Button>
+        <Button id="language-selection-dropdown-btn" type="text" size="small">{i18n.language.substr(0, 2)}<DownOutlined /></Button>
     </Dropdown>;
 }

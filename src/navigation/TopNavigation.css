@@ -13,16 +13,15 @@
     border-image-slice: 1;
 }
 
-@media all and (max-width: 840px) {
+@media all and (max-width: 1026px) {
     #top-navigation-container {
-        padding: 0 calc((100% - 672px)/2);
+        padding: 0 calc((100% - 807px)/2);
     }
 }
 
-@media all and (min-width: 1100px) {
-    #top-navigation-container {
-        padding: 0 calc((100% - 880px)/2);
-    }
+#top-navigation-container > div {
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 /* menu item styles */
@@ -110,7 +109,7 @@
     display: contents;
 }
 
-@media all and (max-width: 710px) {
+@media all and (max-width: 876px) {
     #top-navigation-container {
         padding: 0;
     }

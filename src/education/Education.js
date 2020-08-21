@@ -7,18 +7,21 @@
 import React from 'react';
 import { Typography } from 'antd';
 import EducationInformation from './EducationInformation';
+import { useTranslation } from 'react-i18next';
 
 import './Education.css';
-
-import education from './resources/data.json';
 
 const { Title, Paragraph } = Typography;
 
 export default function Education() {
+    const { t } = useTranslation();
+
+    const education = t("education", { returnObjects: true });
+
     return <div id="education-container">
-        <Title level={3}>Education</Title>
+        <Title level={3}>{education.heading}</Title>
         {
-            education.map((diploma, index) => {
+            education.items.map((diploma, index) => {
                 return <EducationInformation key={index} education={diploma} />
             })
         }

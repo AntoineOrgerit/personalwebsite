@@ -10,6 +10,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ParallaxProvider, useController } from 'react-scroll-parallax';
 
+import './i18n';
+
 import './reset.css';
 import './normalize.css';
 import './index.css';
