@@ -35,7 +35,7 @@ export default function TopNavigation() {
             </Col>
             <Col md>
                 <Row>
-                    <Col className="top-navigation-element" xs><Link to={"/"}>{t("menu.about")}</Link></Col>
+                    <Col className="top-navigation-element" xs><Link to={"/about"}>{t("menu.about")}</Link></Col>
                     <Col className="top-navigation-element" xs><Link to={"/experience"}>{t("menu.experience")}</Link></Col>
                     <Col className="top-navigation-element" xs><Link to="/education">{t("menu.education")}</Link></Col>
                     <Col className="top-navigation-element" xs><Link to="/">{t("menu.projects")}</Link></Col>
