@@ -4,5 +4,80 @@
         "experience": "Expérience",
         "education": "Formation",
         "projects": "Projets"
+    },
+    "experiences": {
+        "heading": "Expériences Professionnelles",
+        "items": [
+            {
+                "period": "Févr. 2020 - Juin 2020",
+                "title": "Stagiaire Développeur Full Stack",
+                "company": "Gfi Informatique",
+                "location": "Niort, France",
+                "description": "Développement de deux modules dans le cadre d'un outil interne de pilotage des projets, incluant différents aspects financiers et des indicateurs de qualité pour un contrat.",
+                "details": [
+                    "During my final year internship, I had the opportunity to work on an internal monitoring tool aiming to provide different project management key indicators to multiple types of users. I was in charge of a financial summary and a quality management overview modules, either interfaced with another internal tool or fully independent.",
+                    "Thanks to the specifications provided, I was able to build these modules from the backend (data structures, services, management...) to the frontend (global interface, UX, web services consumption...).",
+                    "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
+                    "These modules are now integrated to the global solution and will be soon brought to use by different people."
+                ],
+                "skills": [
+                    "ReactJS",
+                    "Java EE",
+                    "Spring Boot",
+                    "JPA",
+                    "Hibernate",
+                    "RESTful API"
+                ]
+            },
+            {
+                "period": "Avr. 2019 - Juill. 2019",
+                "title": "Stagiraire Développeur Java",
+                "company": "Laboratoire L3i",
+                "location": "La Rochelle, France",
+                "description": "Amélioration des scénarios d’interaction des robots Nao et Pepper par l’introduction d’une nouvelle modélisation à base de graphes de contexte, tout en assurant la robustesse des modèles produits par le biais d’un vérificateur de propriétés dédié.",
+                "details": [
+                    "Nope"
+                ],
+                "skills": [
+                    "Java",
+                    "JAXB",
+                    "data modelling",
+                    "XML",
+                    "JavaScript"
+                ]
+            },
+            {
+                "period": "Avr. 2018 - Juin 2018",
+                "title": "Stagiraire Développeur Android",
+                "company": "Laboratoire L3i",
+                "location": "La Rochelle, France",
+                "description": "Plus-value de l’expérience des visiteurs du Muséum de La Rochelle par la mise à disposition d’une application compagnon sur tablettes numériques et le fournissement au personnel d’une visualisation des informations récoltées des différentes visites.",
+                "details": [
+                    "Nope"
+                ],
+                "skills": [
+                    "Android native",
+                    "Java",
+                    "Node.js",
+                    "UI design"
+                ]
+            },
+            {
+                "period": "Août 2016",
+                "title": "Stagiraire Développeur Web",
+                "company": "Agence de Communication PlusCom",
+                "location": "La Rochelle, France",
+                "description": "Participation dans plusieurs projets de développement web pour différents clients, impliquant principalement l'étude des besoins tout en apportant des ajouts ou modifications sur du contenu ou des fonctionnalités.",
+                "details": [
+                    "Nope"
+                ],
+                "skills": [
+                    "JavaScript",
+                    "PHP",
+                    "SQL",
+                    "UI design"
+                ]
+            }
+        ]
     }
 }

@@ -65,6 +65,11 @@ class SideNavigation extends React.Component {
         this.setState({ menuCollapsed: !this.state.menuCollapsed });
     }
 
+    /**
+     * Handles click events to determine if they have been performed outside of the side menu.
+     * 
+     * @param {Event} event the click event to analyse
+     */
     handleClickOutside = event => {
         if (!this.state.menuCollapsed && this.menuRef && !this.menuRef.current.contains(event.target) && !event.target.classList.contains("language-option")) {
             this.toggleCollapsed();
