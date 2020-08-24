@@ -5,6 +5,88 @@
         "education": "Formation",
         "projects": "Projets"
     },
+    "about": {
+        "heading": "À propos",
+        "presentation": {
+            "heading": "Un diplômé français au Royaume-Uni",
+            "content": "My name is Antoine Orgerit. I am a graduate of a Master's degree in Software Engineering from La Rochelle University (France) and a skilled developer with approximately one year background experience in development, from front-end to back-end. As a recent graduate, I have now relocated to Birmingham where I am currently looking for opportunities to boost my career. Working in an international environment has always been an objective to me and would allow me to grow even further."
+        },
+        "knowledge": {
+            "heading": "Skills and knowledge",
+            "content": "Through my academic and profesionnal experiences, I have been able to have a look at different aspects of information technology that allowed me to build a strong full stack interest. I particularly like to see further than programming itself to answer a given stake and consider many other aspects: data manipulated and its representation, user experience, project requirements in terms of scalability and adaptability, continuous quality assessment, documentation... But this does not prevent me to be versed in several programming languages and frameworks.",
+            "skills": {
+                "soft": [
+                    "Technology literacy",
+                    "Problem solving",
+                    "Critical thinking",
+                    "Time-management",
+                    "Attention to detail"
+
+                ],
+                "hard": [
+                    "Code quality",
+                    "Quality assurance",
+                    "Documentation",
+                    "Unit testing",
+                    "Data modeling",
+                    "User experience",
+                    "Data analysis",
+                    "Java",
+                    "JPA",
+                    "Spring Boot",
+                    "Maven",
+                    "Git",
+                    "Agile methods",
+                    "Android native",
+                    "SQL",
+                    "NoSQL",
+                    "Node.js",
+                    "JavaScript",
+                    "ReactJS",
+                    "RESTful API",
+                    "Go",
+                    "Scala",
+                    "HL7/FHIR"
+                ]
+            }
+        },
+        "itCertifications": {
+            "heading": "Compétences certifiées",
+            "description": "Lorem ipsum",
+            "certifications": [
+                {
+                    "title": "Numérique Responsable (Green IT)",
+                    "link": "#"
+                },
+                {
+                    "title": "Écoconception Web (Green IT)",
+                    "link": "#"
+                },
+                {
+                    "title": "C2i Niveau 2 – Métiers de l'Ingénieur",
+                    "link": "#"
+                },
+                {
+                    "title": "Google Ateliers Numériques",
+                    "link": "#"
+                }
+            ]
+        },
+        "languagesCertifications": {
+            "heading": "Abilités linguistiques",
+            "description": "Lorem ipsum",
+            "certifications": [
+                {
+                    "title": "Français - Certification Voltaire Niveau Affaires",
+                    "link": "#"
+                },
+                {
+                    "title": "Anglais - TOEIC Listening & Reading certifié niveau C1",
+                    "link": "#"
+                }
+            ]
+        }
+    },
     "experiences": {
         "heading": "Expériences Professionnelles",
         "items": [

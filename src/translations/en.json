@@ -5,6 +5,88 @@
         "education": "Education",
         "projects": "Projects"
     },
+    "about": {
+        "heading": "About",
+        "presentation": {
+            "heading": "A French Graduate in the U.K.",
+            "content": "My name is Antoine Orgerit. I am a graduate of a Master's degree in Software Engineering from La Rochelle University (France) and a skilled developer with approximately one year background experience in development, from front-end to back-end. As a recent graduate, I have now relocated to Birmingham where I am currently looking for opportunities to boost my career. Working in an international environment has always been an objective to me and would allow me to grow even further."
+        },
+        "knowledge": {
+            "heading": "Skills and knowledge",
+            "content": "Through my academic and profesionnal experiences, I have been able to have a look at different aspects of information technology that allowed me to build a strong full stack interest. I particularly like to see further than programming itself to answer a given stake and consider many other aspects: data manipulated and its representation, user experience, project requirements in terms of scalability and adaptability, continuous quality assessment, documentation... But this does not prevent me to be versed in several programming languages and frameworks.",
+            "skills": {
+                "soft": [
+                    "Technology literacy",
+                    "Problem solving",
+                    "Critical thinking",
+                    "Time-management",
+                    "Attention to detail"
+
+                ],
+                "hard": [
+                    "Code quality",
+                    "Quality assurance",
+                    "Documentation",
+                    "Unit testing",
+                    "Data modeling",
+                    "User experience",
+                    "Data analysis",
+                    "Java",
+                    "JPA",
+                    "Spring Boot",
+                    "Maven",
+                    "Git",
+                    "Agile methods",
+                    "Android native",
+                    "SQL",
+                    "NoSQL",
+                    "Node.js",
+                    "JavaScript",
+                    "ReactJS",
+                    "RESTful API",
+                    "Go",
+                    "Scala",
+                    "HL7/FHIR"
+                ]
+            }
+        },
+        "itCertifications": {
+            "heading": "Certified competencies",
+            "description": "I had several opportunities to get IT certifications during my higher studies, mainly as part of my master's degree. Some of them are exclusive to La Rochelle University, member of the INR (Institut du Numérique Responsable, or Responsible Digital Institute).",
+            "certifications": [
+                {
+                    "title": "Responsible Digital (Green IT)",
+                    "link": "#"
+                },
+                {
+                    "title": "Web Eco-design (Green IT)",
+                    "link": "#"
+                },
+                {
+                    "title": "C2i Level 2 – Engineering professions",
+                    "link": "#"
+                },
+                {
+                    "title": "Google Digital Garage",
+                    "link": "#"
+                }
+            ]
+        },
+        "languagesCertifications": {
+            "heading": "Languages proficiency",
+            "description": "Additionally to my knowledge in information technology, I have certified languages proficiency in English and French. If one of them is my native language, I had the chance to develop my English during my Erasmus semester in Ireland. I also have a basic knowledge of Spanish.",
+            "certifications": [
+                {
+                    "title": "English - TOEIC Listening & Reading certificed C1 level",
+                    "link": "#"
+                },
+                {
+                    "title": "French - Voltaire Certification with French Business Level",
+                    "link": "#"
+                }
+            ]
+        }
+    },
     "experiences": {
         "heading": "Experience",
         "items": [
