@@ -77,6 +77,12 @@
     font-weight: 500;
 }
 
+/* disabling items tooltip on mobile */
+
+.ant-menu-inline-collapsed-tooltip {
+    display: none !important;
+}
+
 /* styling language selection menu item */
 
 #side-navigation-container .side-navigation-language-selection-container {
