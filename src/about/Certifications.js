@@ -28,13 +28,13 @@ export default function Certifications(props) {
         <Paragraph>{description}</Paragraph>
         <Row gutter={[0, 24]}>
             <Col xs={24} sm={24}>
-                <Row gutter={[100, 0]} align="middle">
+                <Row gutter={[144, 0]} align="middle" style={{ maxWidth: "100vw" }}>
                     {
                         certifications.map((certification, index) => (
                             <Col xs={24} sm={24} md={12} lg={(certifications.length >= 3 ? 8 : 12)} key={index}>
                                 <Row className="certification" gutter={[8, 0]}>
-                                    <Col xs={23} sm={23}>{certification.title}</Col>
-                                    <Col xs={1} sm={1}><Button type="link" href={certification.link}><LinkOutlined /></Button></Col>
+                                    <Col xs={23} sm={22}>{certification.title}</Col>
+                                    <Col xs={1} sm={2} style={{ textAlign: "right" }}><Button type="link" href={certification.link}><LinkOutlined /></Button></Col>
                                 </Row>
                             </Col>
                         ))
