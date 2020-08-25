@@ -1,0 +1,38 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* general layout style */
+
+#about-container > div:not(:last-of-type) {
+    margin-bottom: 3em;
+}
+
+/* title particular style */
+
+#about-container h4 {
+    color: #B9A563;
+    font-weight: 400;
+}
+
+#about-container h4 span[role="img"] {
+    margin-right: 0.25em;
+}
+
+/* style of the presentation container */
+
+#about-container .presentation-container {
+    padding: 1em 0;
+}
+
+#about-container .resume-download {
+    float: right;
+}
+
+/* style of the skills tags */
+
+#about-container .skills-section .ant-tag {
+    margin-top: 3px;
+}

@@ -10,6 +10,7 @@ import { Layout } from 'antd';
 
 import TopNavigation from './navigation/TopNavigation';
 import Home from './home/Home';
+import About from './about/About';
 import Experience from './experience/Experience';
 import Education from './education/Education';
 import SideNavigation from './navigation/SideNavigation';
@@ -37,6 +38,9 @@ export default function App() {
             <Switch>
               <Route exact path="/">
                 <Home />
+              </Route>
+              <Route exact path="/about">
+                <About />
               </Route>
               <Route exact path="/experience">
                 <Experience />

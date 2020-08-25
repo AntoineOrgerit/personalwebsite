@@ -1,0 +1,22 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* general style of certification name and link */
+
+.certifications-section .certification {
+    margin-bottom: 1em;
+    vertical-align: top;
+}
+
+.certifications-section .certification a {
+    padding: 0;
+    line-height: inherit;
+    height: 100%;
+    border: none;
+    clear: none;
+    display: inline-flex;
+    align-items: center;
+}

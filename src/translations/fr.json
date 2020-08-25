@@ -5,6 +5,88 @@
         "education": "Formation",
         "projects": "Projets"
     },
+    "about": {
+        "heading": "À propos",
+        "presentation": {
+            "heading": "Un diplômé français au Royaume-Uni",
+            "content": "Je suis Antoine Orgerit, diplômé d'un Master Informatique Architecte Logiciel de La Rochelle Université et un développeur compétent ave environ un an d'expérience en développement, du front-end au back-end. En tant que jeune diplômé, je me suis désormais relocalisé à Birmingham au Royaume-Uni où je suis actuellement en recherche d'une opportunité permettant de booster ma carrière professionnelle. Travailler dans un environnement international a toujours été un de mes objectifs et me permettrait de me développer encore plus.",
+            "resumeButton": "Télécharger mon CV"
+        },
+        "knowledge": {
+            "heading": "Aptitudes et connaissances",
+            "content": "À travers mes expériences académiques et professionnelles, j'ai eu la possibilité d'étudier de près ou de loin les différents aspects de l'informatique tout en construisant un intérêt certain pour le full stack. J'apprécie particulièrement voir au-delà de la programmation même pour répondre à un enjeu et considérer d'autres points d'intérêt : la gestion et la manipulation des données ainsi que leur représentation, l'expérience utilisateur, les besoins d'un projet en termes d'extensibilité et d'adaptivité, l'évaluation de la qualité en continue, la documentation... Cela ne m'empêche néanmoins pas des familier à plusieurs langages de programmation et frameworks.",
+            "skills": {
+                "soft": [
+                    "Culture technologique",
+                    "Résolution de problèmes",
+                    "Esprit critique",
+                    "Gestion du temps",
+                    "Souci du détail"
+                ],
+                "hard": [
+                    "Qualité de code",
+                    "Assurance qualité",
+                    "Documentation",
+                    "Tests unitaires",
+                    "Modélisation de données",
+                    "Expérience utilisateur",
+                    "Analyse de données",
+                    "Java",
+                    "JPA",
+                    "Spring Boot",
+                    "Maven",
+                    "Git",
+                    "Méthodes Agiles",
+                    "Android native",
+                    "SQL",
+                    "NoSQL",
+                    "Node.js",
+                    "JavaScript",
+                    "ReactJS",
+                    "RESTful API",
+                    "Go",
+                    "Scala",
+                    "HL7/FHIR"
+                ]
+            }
+        },
+        "itCertifications": {
+            "heading": "Compétences certifiées",
+            "description": "Durant mes études supérieures, et en particulier durant mon Master, j'ai eu plusieurs occasions d'obtenir des certifications informatiques. Certaines d'entre elles sont exclusives à La Rochelle Université, membre de l'INR (Institut du Numérique Responsable).",
+            "certifications": [
+                {
+                    "title": "Numérique Responsable (Green IT)",
+                    "link": "#"
+                },
+                {
+                    "title": "Écoconception Web (Green IT)",
+                    "link": "#"
+                },
+                {
+                    "title": "C2i Niveau 2 – Métiers de l'Ingénieur",
+                    "link": "#"
+                },
+                {
+                    "title": "Google Ateliers Numériques",
+                    "link": "#"
+                }
+            ]
+        },
+        "languagesCertifications": {
+            "heading": "Abilités linguistiques",
+            "description": "En plus de l'ensemble de mes compétences en informatique, mes compétences en Français et en Anglais ont pu être certifiées. J'ai notamment eu la chance de développer mes compétences en Anglais durant mon semestre Erasmus+ en Irelande. J'ai également quelques connaissances basiques en Espagnol.",
+            "certifications": [
+                {
+                    "title": "Français - Certification Voltaire Niveau Affaires",
+                    "link": "#"
+                },
+                {
+                    "title": "Anglais - TOEIC Listening & Reading certifié niveau C1",
+                    "link": "#"
+                }
+            ]
+        }
+    },
     "experiences": {
         "heading": "Expériences Professionnelles",
         "items": [

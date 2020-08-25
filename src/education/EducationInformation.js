@@ -7,7 +7,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Button, Collapse, Tag } from 'antd';
-import { BranchesOutlined, PushpinOutlined } from '@ant-design/icons';
+import { BranchesOutlined, LaptopOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 
 import './EducationInformation.css';
@@ -63,7 +63,7 @@ export default function EducationInformation(props) {
                                 }
                                 {
                                     detail.experience &&
-                                    <Paragraph className="education-experience"><PushpinOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
+                                    <Paragraph className="education-experience"><LaptopOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                                             detail.experience.map((internship, internshipIndex) => (
                                                 <Tag key={internshipIndex} type="link" size="small"><a href={internship.link}>{internship.title}</a></Tag>
@@ -95,7 +95,7 @@ export default function EducationInformation(props) {
         }
         {
             education.experience &&
-            <Paragraph className="education-experience"><PushpinOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
+            <Paragraph className="education-experience"><LaptopOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                     education.experience.map((internship, internshipIndex) => (
                         <Tag key={internshipIndex} type="link" size="small"><a href={internship.link}>{internship.title}</a></Tag>
