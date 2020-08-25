@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 
 import './Education.css';
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 
 export default function Education() {
     const { t } = useTranslation();

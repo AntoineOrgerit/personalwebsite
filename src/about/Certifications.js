@@ -27,14 +27,14 @@ export default function Certifications(props) {
         <Title level={4}>{icon} {heading}</Title>
         <Paragraph>{description}</Paragraph>
         <Row gutter={[0, 24]}>
-            <Col xs={24} sm={24}>
-                <Row gutter={[144, 0]} align="middle" style={{ maxWidth: "100vw" }}>
+            <Col xs={24} sm={24} style={{ overflow: "hidden" }}>
+                <Row gutter={[144, 0]} align="middle">
                     {
                         certifications.map((certification, index) => (
                             <Col xs={24} sm={24} md={12} lg={(certifications.length >= 3 ? 8 : 12)} key={index}>
                                 <Row className="certification" gutter={[8, 0]}>
-                                    <Col xs={23} sm={22}>{certification.title}</Col>
-                                    <Col xs={1} sm={2} style={{ textAlign: "right" }}><Button type="link" href={certification.link}><LinkOutlined /></Button></Col>
+                                    <Col xs={22} sm={22}>{certification.title}</Col>
+                                    <Col xs={2} sm={2} style={{ textAlign: "right" }}><Button type="link" href={certification.link}><LinkOutlined /></Button></Col>
                                 </Row>
                             </Col>
                         ))
@@ -53,4 +53,4 @@ Certifications.propTypes = {
         title: PropTypes.string.isRequired,
         link: PropTypes.string.isRequired
     }).isRequired).isRequired
-}
+};

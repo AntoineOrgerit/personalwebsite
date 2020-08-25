@@ -33,7 +33,7 @@ export default function About() {
             <Col className="presentation-container" md={16}>
                 <Title level={4}><PushpinOutlined /> {t("about.presentation.heading")}</Title>
                 <Paragraph>{t("about.presentation.content")}</Paragraph>
-                <Button className="resume-download">Download my CV</Button>
+                <Button className="resume-download" href={process.env.PUBLIC_URL + "/resume/resume_antoine_orgerit.pdf"} target="_blank">{t("about.presentation.resumeButton")}</Button>
             </Col>
         </Row>
         <Row className="skills-section">
