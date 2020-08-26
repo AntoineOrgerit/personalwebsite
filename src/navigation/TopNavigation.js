@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Typography, Row, Col } from 'antd';
 import Icon from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 import LanguageSelection from './LanguageSelection';
 
@@ -23,10 +24,17 @@ const { Title } = Typography;
  * Top navigation bar used on wide screens.
  * 
  * @author Antoine Orgerit
- * @version 2.0
+ * @version 2.1
  */
 export default function TopNavigation() {
     const { t } = useTranslation();
+    const { pathname } = useLocation();
+
+    const MenuItem = ({ link, title }) => {
+        return <Col className={"top-navigation-element" + (pathname.includes(link) ? " active-navigation-element" : "")} xs>
+            <Link to={link}>{title}</Link>
+        </Col>;
+    };
 
     return <Header id="top-navigation-container">
         <Row justify="space-between" align="middle">
@@ -35,15 +43,15 @@ export default function TopNavigation() {
             </Col>
             <Col md>
                 <Row>
-                    <Col className="top-navigation-element" xs><Link to={"/about"}>{t("menu.about")}</Link></Col>
-                    <Col className="top-navigation-element" xs><Link to={"/experience"}>{t("menu.experience")}</Link></Col>
-                    <Col className="top-navigation-element" xs><Link to="/education">{t("menu.education")}</Link></Col>
-                    <Col className="top-navigation-element" xs><Link to="/">{t("menu.projects")}</Link></Col>
+                    <MenuItem link="/about" title={t("menu.about")} />
+                    <MenuItem link="/experience" title={t("menu.experience")} />
+                    <MenuItem link="/education" title={t("menu.education")} />
+                    <MenuItem link="/projects" title={t("menu.projects")} />
                 </Row>
             </Col>
             <Col md>
                 <Row>
-                    <Col className="top-navigation-element" xs><Link to="/contact">Contact</Link></Col>
+                    <MenuItem link="/contact" title="Contact" />
                     <Col className="top-navigation-element" xs><LanguageSelection /></Col>
                 </Row>
             </Col>
