@@ -22,7 +22,7 @@ const { Paragraph, Title } = Typography;
  * Home page of the website.
  * 
  * @author Antoine Orgerit
- * @version 1.0
+ * @version 2.0
  */
 export default function Home() {
     const { t } = useTranslation();

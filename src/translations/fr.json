@@ -5,6 +5,9 @@
         "education": "Formation",
         "projects": "Projets"
     },
+    "footer": {
+        "copyright": "Antoine Orgerit, 2020. Tous droits réservés."
+    },
     "home": {
         "title": "Diplômé en Master Architecte Logiciel",
         "skillsHighlight": {

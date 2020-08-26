@@ -5,6 +5,9 @@
         "education": "Education",
         "projects": "Projects"
     },
+    "footer": {
+        "copyright": "Antoine Orgerit, 2020. All rights reserved."
+    },
     "home": {
         "title": "Software Engineering Graduate",
         "skillsHighlight": {
