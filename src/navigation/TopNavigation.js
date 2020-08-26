@@ -5,11 +5,10 @@
  */
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Layout, Typography, Row, Col } from 'antd';
 import Icon from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
 
 import LanguageSelection from './LanguageSelection';
 
@@ -30,6 +29,11 @@ export default function TopNavigation() {
     const { t } = useTranslation();
     const { pathname } = useLocation();
 
+    /**
+     * Allows to generate a menu item for the top navigation.
+     * 
+     * @param {Object} props the properties of the menu item
+     */
     const MenuItem = ({ link, title }) => {
         return <Col className={"top-navigation-element" + (pathname.includes(link) ? " active-navigation-element" : "")} xs>
             <Link to={link}>{title}</Link>
