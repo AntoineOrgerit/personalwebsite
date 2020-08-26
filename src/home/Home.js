@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { Typography, Button, Row, Col } from 'antd';
 import TextLoop from "react-text-loop";
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'react-router-dom';
 
 import FullscreenParallax from './FullscreenParallax';
 
@@ -65,7 +66,7 @@ export default function Home() {
                         <Title level={3}>{t("home.developerSection.heading")}</Title>
                         <Paragraph>{t("home.developerSection.content")}</Paragraph>
                         <div className="link-container">
-                            <Button href="/about">{t("home.developerSection.button")}</Button>
+                            <Link className="ant-btn" to="/about">{t("home.developerSection.button")}</Link>
                         </div>
                     </div>
                 </Col>
@@ -84,7 +85,7 @@ export default function Home() {
                         <Title level={3}>{t("home.experienceSection.heading")}</Title>
                         <Paragraph>{t("home.experienceSection.content")}</Paragraph>
                         <div className="link-container">
-                            <Button href="/experience">{t("home.experienceSection.button")}</Button>
+                            <Link className="ant-btn" to="/experience">{t("home.experienceSection.button")}</Link>
                         </div>
                     </div>
                 </Col>
@@ -97,7 +98,7 @@ export default function Home() {
                         <Title level={3}>{t("home.projectsSection.heading")}</Title>
                         <Paragraph>{t("home.projectsSection.content")}</Paragraph>
                         <div className="link-container">
-                            <Button href="/projects">{t("home.projectsSection.button")}</Button>
+                            <Link className="ant-btn" to="/projects">{t("home.projectsSection.button")}</Link>
                         </div>
                     </div>
                 </Col>
