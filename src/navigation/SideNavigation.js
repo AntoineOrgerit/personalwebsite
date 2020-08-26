@@ -87,7 +87,7 @@ class SideNavigation extends React.Component {
                     <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/education">{t("menu.education")}</Link></span></Menu.Item>
                     <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/">{t("menu.projects")}</Link></span></Menu.Item>
                     <Menu.Divider />
-                    <Menu.Item onClick={this.toggleCollapsed} className="side-navigation-item-bottom"><span><Link to="/">Contact</Link></span></Menu.Item>
+                    <Menu.Item onClick={this.toggleCollapsed} className="side-navigation-item-bottom"><span><Link to="/contact">Contact</Link></span></Menu.Item>
                     <Menu.Item className="side-navigation-item-bottom side-navigation-language-selection-container" disabled><LanguageSelection /></Menu.Item>
                 </Menu>
             </Sider>

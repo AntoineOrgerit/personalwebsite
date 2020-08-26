@@ -257,5 +257,15 @@
                 "link": "#"
             }
         ]
+    },
+    "contact": {
+        "information": {
+            "heading": "Interested to get in touch with me?",
+            "content": "To discuss about a project, an opportunity or simply to get more information about me, you can use my contact details to send me an email or a message via LinkedIn or WhatsApp. You can also consult some of my profiles on the web.",
+            "websiteRequest": "Any suggestion about this website or noticed a bug? Please send me an email to"
+        },
+        "emailHeading": "By email",
+        "webHeading": "On the web",
+        "phoneHeading": "By phone"
     }
 }
