@@ -14,14 +14,16 @@ const { Text } = Typography;
 
 export default function Footer() {
     return <Layout.Footer id="footer">
-        <Text className="footer-contact-container"><Row justify="space-around" gutter={[16, 0]}>
-            <Col className="footer-contact-item" sm><a href="https://www.linkedin.com/in/antoine-orgerit/" target="_blank" rel="noopener noreferrer"><LinkedinFilled /></a></Col>
-            <Col className="footer-contact-item" sm><a href="https://github.com/AntoineOrgerit" target="_blank" rel="noopener noreferrer"><GithubFilled /></a></Col>
-            <Col className="footer-contact-item" sm><a href="https://gitlab.com/AntoineOrgerit" target="_blank" rel="noopener noreferrer"><GitlabOutlined /></a></Col>
-            <Col className="footer-contact-item" sm><a href="mailto:orgerit.antoine@gmail.com"><MailOutlined /></a></Col>
-            <Col className="footer-contact-item" sm><a href="tel:+33678081825"><PhoneOutlined /></a></Col>
-            <Col className="footer-contact-item" sm><a href="https://wa.me/33678081825" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a></Col>
-        </Row></Text>
+        <Text className="footer-contact-container">
+            <Row justify="space-around" gutter={[16, 0]}>
+                <Col className="footer-contact-item" sm><a href="https://www.linkedin.com/in/antoine-orgerit/" target="_blank" rel="noopener noreferrer"><LinkedinFilled /></a></Col>
+                <Col className="footer-contact-item" sm><a href="https://github.com/AntoineOrgerit" target="_blank" rel="noopener noreferrer"><GithubFilled /></a></Col>
+                <Col className="footer-contact-item" sm><a href="https://gitlab.com/AntoineOrgerit" target="_blank" rel="noopener noreferrer"><GitlabOutlined /></a></Col>
+                <Col className="footer-contact-item" sm><a href="mailto:orgerit.antoine@gmail.com"><MailOutlined /></a></Col>
+                <Col className="footer-contact-item" sm><a href="tel:+33678081825"><PhoneOutlined /></a></Col>
+                <Col className="footer-contact-item" sm><a href="https://wa.me/33678081825" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a></Col>
+            </Row>
+        </Text>
         <Text type="secondary">&copy; Antoine Orgerit, 2020. All rights reserved.</Text>
     </Layout.Footer>;
 }

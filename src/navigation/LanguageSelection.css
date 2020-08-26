@@ -7,6 +7,7 @@
 /* general button style */
 
 #language-selection-dropdown-btn {
+    background: none;
     padding: 0;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
@@ -17,4 +18,10 @@
 
 #language-selection-dropdown-btn:hover {
     color: #B9A563;
+}
+
+/* style of the dropdown menu */
+
+.language-selection-dropdown-container ul {
+    padding: 0;
 }

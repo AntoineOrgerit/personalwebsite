@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
@@ -21,7 +21,7 @@ const Sider = Layout.Sider;
  * Side navigation displayed on small screen.
  * 
  * @author Antoine Orgerit
- * @version 2.0
+ * @version 2.1
  */
 class SideNavigation extends React.Component {
     element = null;
@@ -76,18 +76,31 @@ class SideNavigation extends React.Component {
         }
     }
 
+    /**
+     * Determines the active key of the side menu.
+     * 
+     * @param {String} pathname the current pathname of the website
+     */
+    getActivePathname = pathname => {
+        let pathnameWithoutLeadingSlash = pathname.substring(1);
+        let bookmarkCharacterIndex = pathnameWithoutLeadingSlash.indexOf("#");
+        return (bookmarkCharacterIndex === -1 ? pathnameWithoutLeadingSlash : pathnameWithoutLeadingSlash.substring(0, bookmarkCharacterIndex));
+    }
+
     render() {
-        const { t } = this.props;
+        const { t, location } = this.props;
+
+        let activeKey = this.getActivePathname(location.pathname);
 
         return <div id="side-navigation-container" className={this.state.menuCollapsed ? "collapsed" : ""} ref={this.menuRef}>
             <Sider collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollapse} collapsed={this.state.menuCollapsed}>
-                <Menu mode="vertical">
-                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/about">{t("menu.about")}</Link></span></Menu.Item>
-                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/experience">{t("menu.experience")}</Link></span></Menu.Item>
-                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/education">{t("menu.education")}</Link></span></Menu.Item>
-                    <Menu.Item onClick={this.toggleCollapsed}><span><Link to="/">{t("menu.projects")}</Link></span></Menu.Item>
+                <Menu mode="vertical" selectedKeys={[activeKey]}>
+                    <Menu.Item key="about" onClick={this.toggleCollapsed}><span><Link to="/about">{t("menu.about")}</Link></span></Menu.Item>
+                    <Menu.Item key="experience" onClick={this.toggleCollapsed}><span><Link to="/experience">{t("menu.experience")}</Link></span></Menu.Item>
+                    <Menu.Item key="education" onClick={this.toggleCollapsed}><span><Link to="/education">{t("menu.education")}</Link></span></Menu.Item>
+                    <Menu.Item key="projects" onClick={this.toggleCollapsed}><span><Link to="/projects">{t("menu.projects")}</Link></span></Menu.Item>
                     <Menu.Divider />
-                    <Menu.Item onClick={this.toggleCollapsed} className="side-navigation-item-bottom"><span><Link to="/contact">Contact</Link></span></Menu.Item>
+                    <Menu.Item key="contact" onClick={this.toggleCollapsed} className="side-navigation-item-bottom"><span><Link to="/contact">Contact</Link></span></Menu.Item>
                     <Menu.Item className="side-navigation-item-bottom side-navigation-language-selection-container" disabled><LanguageSelection /></Menu.Item>
                 </Menu>
             </Sider>
@@ -100,4 +113,4 @@ class SideNavigation extends React.Component {
     }
 }
 
-export default withTranslation()(SideNavigation);
+export default withRouter(withTranslation()(SideNavigation));
