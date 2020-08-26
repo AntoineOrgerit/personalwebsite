@@ -1,0 +1,32 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+#contact-container .ant-row {
+    margin-bottom: 0 !important;
+}
+
+#contact-container .links-container h4 {
+    font-size: 1.5em;
+}
+
+#contact-container .email-container a {
+    font-size: 1.3em;
+}
+
+#contact-container .email-container a>span {
+    font-size: 1.25em;
+    vertical-align: text-bottom;
+}
+
+#contact-container .phone-links-container .phone-link a {
+    display: flex;
+    align-items: center;
+}
+
+#contact-container .web-links-container a span, #contact-container .phone-links-container a span {
+    font-size: 2em;
+    vertical-align: top;
+}

@@ -13,6 +13,7 @@ import Home from './home/Home';
 import About from './about/About';
 import Experience from './experience/Experience';
 import Education from './education/Education';
+import Contact from './contact/Contact';
 import SideNavigation from './navigation/SideNavigation';
 import Footer from './footer/Footer';
 
@@ -47,6 +48,9 @@ export default function App() {
               </Route>
               <Route exact path="/education">
                 <Education />
+              </Route>
+              <Route exact path="/contact">
+                <Contact />
               </Route>
               <Route path="*">
                 <Redirect to="/" />
