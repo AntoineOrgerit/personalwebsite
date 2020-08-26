@@ -7,9 +7,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Col, Row, Tag, Collapse } from 'antd';
-import Icon from '@ant-design/icons';
-
-import { ReactComponent as MapPinSVG } from './resources/map-pin.svg';
+import { EnvironmentOutlined } from '@ant-design/icons';
 
 import './ExperienceInformation.css';
 
@@ -20,6 +18,9 @@ const { Panel } = Collapse;
  * Information of a given experience.
  * 
  * @param {Object} props the properties of the given component
+ * 
+ * @author Antoine Orgerit
+ * @version 1.2
  */
 export default function ExperienceInformation(props) {
     const experience = props.experience;
@@ -27,7 +28,7 @@ export default function ExperienceInformation(props) {
     return <div className="experience-information-container">
         <Row className="experience-information-header" gutter={[16, 0]}>
             <Col flex="auto" className="experience-title"><Title level={4}>{experience.title}</Title></Col>
-            <Col className="experience-company"><Text><Icon component={MapPinSVG} />&nbsp;{experience.company}, {experience.location}</Text></Col>
+            <Col className="experience-company"><Text><EnvironmentOutlined />&nbsp;{experience.company}, {experience.location}</Text></Col>
         </Row>
         <Paragraph className="experience-information-description">{experience.description}</Paragraph>
         <Paragraph className="experience-information-details">

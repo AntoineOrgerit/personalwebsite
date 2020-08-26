@@ -6,13 +6,22 @@
 
 import React from 'react';
 import { Layout, Typography, Row, Col } from 'antd';
+import { LinkedinFilled, GithubFilled, MailOutlined, PhoneOutlined, GitlabOutlined, WhatsAppOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 import './Footer.css';
-import { LinkedinFilled, GithubFilled, MailOutlined, PhoneOutlined, GitlabOutlined, WhatsAppOutlined } from '@ant-design/icons';
 
 const { Text } = Typography;
 
+/**
+ * Component used as the footer of the website.
+ * 
+ * @author Antoine Orgerit
+ * @version 2.0
+ */
 export default function Footer() {
+    const { t } = useTranslation();
+
     return <Layout.Footer id="footer">
         <Text className="footer-contact-container">
             <Row justify="space-around" gutter={[16, 0]}>
@@ -24,6 +33,6 @@ export default function Footer() {
                 <Col className="footer-contact-item" sm><a href="https://wa.me/33678081825" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a></Col>
             </Row>
         </Text>
-        <Text type="secondary">&copy; Antoine Orgerit, 2020. All rights reserved.</Text>
+        <Text type="secondary">&copy; {t("footer.copyright")}</Text>
     </Layout.Footer>;
 }

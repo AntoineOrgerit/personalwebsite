@@ -101,11 +101,10 @@
     padding-bottom: 5px;
 }
 
-.home-item-container .home-item-content button {
-    border-radius: 0;
+.home-item-container .home-item-content .link-container {
+    overflow: hidden;
 }
 
-.home-item-container .home-item-content button:not(:hover) {
-    border-color: #B9A563;
-    color: #B9A563;
+.home-item-container .home-item-content a {
+    float: right;
 }
