@@ -9,6 +9,7 @@
 .certifications-section .certification {
     margin-bottom: 1em;
     vertical-align: top;
+    line-height: 1;
 }
 
 .certifications-section .certification a {
