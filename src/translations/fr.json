@@ -136,8 +136,8 @@
                 "location": "Niort, France",
                 "description": "Développement de deux modules dans le cadre d'un outil interne de pilotage des projets, incluant différents aspects financiers et des indicateurs de qualité pour un contrat.",
                 "details": [
-                    "During my final year internship, I had the opportunity to work on an internal monitoring tool aiming to provide different project management key indicators to multiple types of users. I was in charge of a financial summary and a quality management overview modules, either interfaced with another internal tool or fully independent.",
-                    "Thanks to the specifications provided, I was able to build these modules from the backend (data structures, services, management...) to the frontend (global interface, UX, web services consumption...).",
+                    "Durant mon stage de fin d'études, j'ai eu l'occasion de travailler sur un outil de pilotage intern visant à offrir à différents utilisateurs des indicateurs dans le cadre de la gestion des projets de l'entreprise. J'ai été en charge des modules du récapitulatif financier et de la vision générale des indicateurs de qualité, tant en interfaçage avec un second outil interne pour le premier que de manière indépendante pour le second.",
+                    "Grâce aux spécifications transmises, j'ai été en capacité de développer ces modules du back-end (structures de données, services, gestion des requêtes...) vers le front-end (interface générale, expérience utilisateur, consommation des services web...).",
                     "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
                     "These modules are now integrated to the global solution and will be soon brought to use by different people."
                 ],

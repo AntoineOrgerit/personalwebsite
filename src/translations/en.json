@@ -137,7 +137,7 @@
                 "description": "Implemented two modules of an internal project monitoring tool, including a financial summary and quality management overview for a selected contract.",
                 "details": [
                     "During my final year internship, I had the opportunity to work on an internal monitoring tool aiming to provide different project management key indicators to multiple types of users. I was in charge of a financial summary and a quality management overview modules, either interfaced with another internal tool or fully independent.",
-                    "Thanks to the specifications provided, I was able to build these modules from the backend (data structures, services, management...) to the frontend (global interface, UX, web services consumption...).",
+                    "Thanks to the specifications provided, I was able to build these modules from the back-end (data structures, services, requests management...) to the front-end (global interface, UX, web services consumption...).",
                     "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
                     "These modules are now integrated to the global solution and will be soon brought to use by different people."
                 ],
@@ -157,12 +157,14 @@
                 "location": "La Rochelle, France",
                 "description": "Improved Pepper’s robot interaction scenarios by introducing a new modelling based on contextual graphs and ensuring models robustness in a dedicated web editor.",
                 "details": [
-                    "Nope"
+                    "As part of a general research topic around digital innovation in museums and cultural places named \"e-culture\" of the L3i Laboratory, I have been brought to work on Pepper's robot interactions with visitors. More specifically, a new modelling of its interaction scenarios was conceived to make it more dynamic.",
+                    "Guided by a researcher, I have used contextual graphs to develop a new modelling in Java that would allow to run different interaction scenarios. These scenarios are able to communicate and/or synchronise depending on a given context thanks to the JADE platform and instruct specific commands to the robot.",
+                    "A dedicated web editor has also been developed to help end-users to conceive their interaction scenarios while allowing a visual representation of them and ensuring conceived models robustness through several model checking properties."
                 ],
                 "skills": [
                     "Java",
                     "JAXB",
-                    "data modelling",
+                    "Data modelling",
                     "XML",
                     "JavaScript"
                 ]
@@ -174,7 +176,9 @@
                 "location": "La Rochelle, France",
                 "description": "Enhanced museum visitors experience by creating a companion mobile application and provided information visualisation to the personnel by collecting usage data.",
                 "details": [
-                    "Nope"
+                    "My work during this internship aimed to answer a specific demand from the Natural Science Museum of La Rochelle: offering an application installed on available tablets for its visitors. This application would help people to visit the museum while offering some content linked to the different thematics of the rooms.",
+                    "I had to continue a previous work from a master's degree student to develop functionnalities and finalise some aspects: support of multiple languages, additional content link sound or videos, plans display, etc. All the work provided was developed for Android tablets, therefore using Java to conceive the native Android app.",
+                    "Aside of this was a dedicated user interface to display collected data of the visits using the application, previsouly collected with consent and sent to a server. Different figures were chosen to help understand which rooms are the most popular, the paths followed by visitors..."
                 ],
                 "skills": [
                     "Android native",
@@ -190,7 +194,8 @@
                 "location": "La Rochelle, France",
                 "description": "Participated in several web development projects for multiple clients, mainly involving need assessment while adding or updating content and functionnalities.",
                 "details": [
-                    "Nope"
+                    "As part of this \"First Steps in Business\" internship, I have been involved in day to day development requirements of the communication agency. Even if my role was mainly to modify websites content, it is the contact with different clients that was probably the most interesting part.",
+                    "Understanding their needs and trying to answer it precisely were key parts of my work."
                 ],
                 "skills": [
                     "JavaScript",

@@ -4,6 +4,8 @@
  * license that can be found in the LICENSE file.
  */
 
+/* experience major information style */
+
 .experience-information-container .experience-information-header {
     margin-bottom: 1em;
 }
@@ -22,10 +24,6 @@
     color: #B9A563;
 }
 
-.experience-information-container .experience-information-header .experience-company > span svg {
-    fill: none;
-}
-
 .experience-information-container .experience-information-description {
     margin-bottom: 1.5em;
 }
@@ -33,6 +31,8 @@
 .experience-information-container .experience-information-details {
     margin-bottom: 1.5em;
 }
+
+/* experience details style */
 
 .experience-information-container .experience-information-details .ant-collapse-header {
     padding: 0 0 0 24px !important;
@@ -55,6 +55,12 @@
     margin-bottom: 0;
 }
 
+/* experience skill style */
+
 .experience-information-container:not(:last-of-type) .experience-information-skills {
     margin-bottom: 2em;
+}
+
+.experience-information-container .experience-information-skills span {
+    margin-top: 3px;
 }
