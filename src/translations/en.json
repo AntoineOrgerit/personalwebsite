@@ -5,6 +5,42 @@
         "education": "Education",
         "projects": "Projects"
     },
+    "home": {
+        "title": "Software Engineering Graduate",
+        "skillsHighlight": {
+            "heading": "Knowledge in:",
+            "items": [
+                "Java",
+                "JavaScript",
+                "ReactJS",
+                "Spring Boot",
+                "Node.js",
+                "SQL",
+                "NoSQL",
+                "ORM",
+                "Go",
+                "Scala",
+                "Android",
+                "RESTful API",
+                "Agile methods"
+            ]
+        },
+        "developerSection": {
+            "heading": "Combining development and key values",
+            "content": "As a Software Engineering graduate, software development is in the heart of my everyday life point of view. From front-end to back-end, I try to put my work under sustainability, quality and reusability principles. This aims to emphasize evolution, either of the project itself or concepts and guidelines.",
+            "button": "Learn more about me"
+        },
+        "experienceSection": {
+            "heading": "Varied experience and interest",
+            "content": "Experience is what values, through competencies and subjects. My professional experience reflects my curiosity about most topics of information technology (public or private interests, research, practices...). Still, I am mostly oriented to Full Stack stakes: data modeling, web services exposure, web or mobile front end solutions...",
+            "button": "Check my background experience"
+        },
+        "projectsSection": {
+            "heading": "Continuously learning, with projects",
+            "content": "I had several occasions to work on interesting projects during my academic studies, and a lot awaiting the perfect time to be developed. Either for learning a new programming language or to develop my skills, these projects are a way to show what I (and sometimes we) are able of while mixing a bit of project management.",
+            "button": "See some of my projects"
+        }
+    },
     "about": {
         "heading": "About",
         "presentation": {

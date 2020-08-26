@@ -5,6 +5,42 @@
         "education": "Formation",
         "projects": "Projets"
     },
+    "home": {
+        "title": "Diplômé en Master Architecte Logiciel",
+        "skillsHighlight": {
+            "heading": "Connaissances en :",
+            "items": [
+                "Java",
+                "JavaScript",
+                "ReactJS",
+                "Spring Boot",
+                "Node.js",
+                "SQL",
+                "NoSQL",
+                "ORM",
+                "Go",
+                "Scala",
+                "Android",
+                "RESTful API",
+                "Méthodes Agiles"
+            ]
+        },
+        "developerSection": {
+            "heading": "Développement et valeurs clefs",
+            "content": "En tant que diplômé en Master Architecte Logiciel, le développement logiciel est au coeur de ma vision de tous les jours. Du front-end au back-end, j'essaie régulièrement d'associer à mon travail certains principes de développement durable, de qualité et de réutilisabilité. Cela favorise ainsi les possibles évolutions, tant sur le projet même que sur certains concepts ou bonnes pratiques.",
+            "button": "En savoir plus sur moi"
+        },
+        "experienceSection": {
+            "heading": "Expérience et intérêt variés",
+            "content": "L'expérience est ce qui importe probablement le plus, autant à travers les compétences mises en place que les enjeux dont on essaye de répondre. Si mon expérience professionelle reflète ma curiosité sur la plupart des sujets informatiques (intérêts publics ou privés, domaine de la recherche, pratiques...), je reste néanmoins majoritairement orienté vers les enjeux du développement Full Stack : modélisation de données, exposition de services web, solutions front-end web ou mobiles...",
+            "button": "Consulter mon expérience"
+        },
+        "projectsSection": {
+            "heading": "Progresser à travers des projets",
+            "content": "J'ai eu plusieurs occasions de travailler sur des projets intéressants durant mes études supérieures, et beaucoup attendent encore d'être développés au moment opportun. Autant pour apprendre un nouveau langage de programmation que pour développer mes compétences, ces projets sont une manière de démontrer ce que je suis capable (ou parfois ce que nous sommes capables) de concevoir tout en mêlant quelques aspects de gestion de projet.",
+            "button": "Voir mes projets"
+        }
+    },
     "about": {
         "heading": "À propos",
         "presentation": {
