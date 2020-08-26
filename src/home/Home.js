@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Typography, Button, Row, Col } from 'antd';
+import { Typography, Row, Col } from 'antd';
 import TextLoop from "react-text-loop";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';

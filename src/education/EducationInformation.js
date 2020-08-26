@@ -15,6 +15,14 @@ import './EducationInformation.css';
 const { Title, Paragraph } = Typography;
 const { Panel } = Collapse;
 
+/**
+ * Component used as the description of education.
+ * 
+ * @param {Object} props the properties of the component
+ * 
+ * @author Antoine Orgerit
+ * @version 2.0
+ */
 export default function EducationInformation(props) {
     console.log(window.location.origin);
 
@@ -74,7 +82,7 @@ export default function EducationInformation(props) {
                                 {
                                     detail.link &&
                                     <div className="education-diploma-link">
-                                        <Button type="link" href={detail.link}>{t("education.diplomaButton")}</Button>
+                                        <Button type="link" href={detail.link} target="_blank" rel="noopener noreferrer">{t("education.diplomaButton")}</Button>
                                     </div>
                                 }
                             </Panel>
@@ -106,7 +114,7 @@ export default function EducationInformation(props) {
         {
             education.type === "normal" &&
             <div className="education-diploma-link">
-                <Button type="link" href={education.link}>{t("education.diplomaButton")}</Button>
+                <Button type="link" href={education.link} target="_blank" rel="noopener noreferrer">{t("education.diplomaButton")}</Button>
             </div>
         }
     </div>;
@@ -122,7 +130,7 @@ EducationInformation.propTypes = {
         detailedContent: PropTypes.arrayOf(PropTypes.shape({
             title: PropTypes.string.isRequired,
             result: PropTypes.string,
-            description: PropTypes.string.isRequired,
+            description: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
             linkedProjects: PropTypes.arrayOf(PropTypes.shape({
                 title: PropTypes.string.isRequired,
                 link: PropTypes.string.isRequired

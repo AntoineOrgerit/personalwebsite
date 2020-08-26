@@ -235,16 +235,15 @@
                         "link": "#"
                     }
                 ],
-                "link": "#"
+                "link": "https://www.dropbox.com/s/fslt1u6dg3nr4sa/attestation-reussite-master.pdf?dl=0"
             },
             {
-                "type": "normal",
+                "type": "complementary",
                 "title": "Cursus Master Ingénierie C.M.I.",
                 "result": "Labellisé - Juillet 2020",
                 "description": [
                     "Formation complémentaire sélective sur 5 ans focalisée sur la communication, le monde de l'entreprise et la recherche. Ce cursus m'a offert des connaissances additionnelles par rapport au parcours Licence-Master classique dans l'objectif de développer des compétences de niveau ingénieur et une capacité d'abstraction plus approfondie."
-                ],
-                "link": "#"
+                ]
             },
             {
                 "type": "complementary",
@@ -278,7 +277,7 @@
                         "link": "#"
                     }
                 ],
-                "link": "#"
+                "link": "https://www.dropbox.com/s/srqpleppf9vzfk8/diplome_licence.pdf?dl=0"
             },
             {
                 "type": "normal",
@@ -288,7 +287,7 @@
                     "Baccalauréat Scientifique obtenu avec specialité Physique-Chimie.",
                     "Le parcours Sciences de l'Ingénieur m'a permis de découvrir et de me spécialiser durant mes études supérieures dans l'informatique."
                 ],
-                "link": "#"
+                "link": "https://www.dropbox.com/s/8k5a2nd58i690db/bac.pdf?dl=0"
             }
         ]
     },
