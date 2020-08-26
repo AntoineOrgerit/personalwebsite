@@ -16,7 +16,7 @@ import ProgrammingCityBackground from './resources/img/programming_city_edit.jpg
 
 import './Home.css';
 
-const { Paragraph, Title, Text } = Typography;
+const { Paragraph, Title } = Typography;
 
 /**
  * Home page of the website.
@@ -27,6 +27,21 @@ const { Paragraph, Title, Text } = Typography;
 export default function Home() {
     const { t } = useTranslation();
 
+    /**
+     * Shuffles an array using the Durstenfled algorithm.
+     * 
+     * @param {Array} array the array to shuffle
+     */
+    const durstenfledShuffle = array => {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    };
+
     return <div className="home-container">
         <FullscreenParallax backgroundImage={ProgrammingCityBackground} topOffset={0.25} bottomOffset={0.2} height={(document.body.clientHeight - 64) * 0.9}>
             <Paragraph>Antoine Orgerit</Paragraph>
@@ -36,7 +51,7 @@ export default function Home() {
             <Title className="word-carousel" level={3}>
                 {t("home.skillsHighlight.heading")} <TextLoop className="word-carousel-items" mask={true}>
                     {
-                        t("home.skillsHighlight.items", { returnObjects: true }).map((skill, index) => (
+                        durstenfledShuffle(t("home.skillsHighlight.items", { returnObjects: true })).map((skill, index) => (
                             <span key={index}>{skill}</span>
                         ))
                     }
