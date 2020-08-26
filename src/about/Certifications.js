@@ -33,8 +33,8 @@ export default function Certifications(props) {
                         certifications.map((certification, index) => (
                             <Col xs={24} sm={24} md={12} lg={(certifications.length >= 3 ? 8 : 12)} key={index}>
                                 <Row className="certification" gutter={[8, 0]}>
-                                    <Col xs={22} sm={22}>{certification.title}</Col>
-                                    <Col xs={2} sm={2} style={{ textAlign: "right" }}><Button type="link" href={certification.link}><LinkOutlined /></Button></Col>
+                                    <Col xs={22} sm={21}>{certification.title}</Col>
+                                    <Col xs={2} sm={3} style={{ textAlign: "right" }}><Button type="link" href={certification.link}><LinkOutlined /></Button></Col>
                                 </Row>
                             </Col>
                         ))
