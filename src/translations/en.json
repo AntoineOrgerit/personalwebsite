@@ -5,6 +5,45 @@
         "education": "Education",
         "projects": "Projects"
     },
+    "footer": {
+        "copyright": "Antoine Orgerit, 2020. All rights reserved."
+    },
+    "home": {
+        "title": "Software Engineering Graduate",
+        "skillsHighlight": {
+            "heading": "Knowledge in:",
+            "items": [
+                "Java",
+                "JavaScript",
+                "ReactJS",
+                "Spring Boot",
+                "Node.js",
+                "SQL",
+                "NoSQL",
+                "ORM",
+                "Go",
+                "Scala",
+                "Android",
+                "RESTful API",
+                "Agile methods"
+            ]
+        },
+        "developerSection": {
+            "heading": "Combining development and key values",
+            "content": "As a Software Engineering graduate, software development is in the heart of my everyday life point of view. From front-end to back-end, I try to put my work under sustainability, quality and reusability principles. This aims to emphasize evolution, either of the project itself or concepts and guidelines.",
+            "button": "Learn more about me"
+        },
+        "experienceSection": {
+            "heading": "Varied experience and interest",
+            "content": "Experience is what values, through competencies and subjects. My professional experience reflects my curiosity about most topics of information technology (public or private interests, research, practices...). Still, I am mostly oriented to Full Stack stakes: data modeling, web services exposure, web or mobile front end solutions...",
+            "button": "Check my background experience"
+        },
+        "projectsSection": {
+            "heading": "Continuously learning, with projects",
+            "content": "I had several occasions to work on interesting projects during my academic studies, and a lot awaiting the perfect time to be developed. Either for learning a new programming language or to develop my skills, these projects are a way to show what I (and sometimes we) are able of while mixing a bit of project management.",
+            "button": "See some of my projects"
+        }
+    },
     "about": {
         "heading": "About",
         "presentation": {
@@ -56,19 +95,19 @@
             "certifications": [
                 {
                     "title": "Responsible Digital (Green IT)",
-                    "link": "#"
+                    "link": "https://www.dropbox.com/s/pzg8zx7b1pveqi9/certification-numerique-responsable.pdf?dl=0"
                 },
                 {
                     "title": "Web Eco-design (Green IT)",
-                    "link": "#"
+                    "link": "https://www.dropbox.com/s/o19ql0wqk7hdtoj/certification-ecoconception-web.pdf?dl=0"
                 },
                 {
                     "title": "C2i Level 2 – Engineering professions",
-                    "link": "#"
+                    "link": "https://www.dropbox.com/s/tyfe6hq7j78kbei/c2i_niveau2_MI.pdf?dl=0"
                 },
                 {
                     "title": "Google Digital Garage",
-                    "link": "#"
+                    "link": "https://www.dropbox.com/s/3qsgz9u036jkvdk/certification-google-ateliers-numeriques.pdf?dl=0"
                 }
             ]
         },
@@ -78,11 +117,11 @@
             "certifications": [
                 {
                     "title": "English - TOEIC Listening & Reading certificed C1 level",
-                    "link": "#"
+                    "link": "https://www.dropbox.com/s/eo8e8tqzuc7bwhj/certification-toeic.pdf?dl=0"
                 },
                 {
                     "title": "French - Voltaire Certification with French Business Level",
-                    "link": "#"
+                    "link": "https://www.dropbox.com/s/q8xfxa1jlwjhr0x/certification-voltaire.pdf?dl=0"
                 }
             ]
         }
@@ -98,7 +137,7 @@
                 "description": "Implemented two modules of an internal project monitoring tool, including a financial summary and quality management overview for a selected contract.",
                 "details": [
                     "During my final year internship, I had the opportunity to work on an internal monitoring tool aiming to provide different project management key indicators to multiple types of users. I was in charge of a financial summary and a quality management overview modules, either interfaced with another internal tool or fully independent.",
-                    "Thanks to the specifications provided, I was able to build these modules from the backend (data structures, services, management...) to the frontend (global interface, UX, web services consumption...).",
+                    "Thanks to the specifications provided, I was able to build these modules from the back-end (data structures, services, requests management...) to the front-end (global interface, UX, web services consumption...).",
                     "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
                     "These modules are now integrated to the global solution and will be soon brought to use by different people."
                 ],
@@ -118,12 +157,14 @@
                 "location": "La Rochelle, France",
                 "description": "Improved Pepper’s robot interaction scenarios by introducing a new modelling based on contextual graphs and ensuring models robustness in a dedicated web editor.",
                 "details": [
-                    "Nope"
+                    "As part of a general research topic around digital innovation in museums and cultural places named \"e-culture\" of the L3i Laboratory, I have been brought to work on Pepper's robot interactions with visitors. More specifically, a new modelling of its interaction scenarios was conceived to make it more dynamic.",
+                    "Guided by a researcher, I have used contextual graphs to develop a new modelling in Java that would allow to run different interaction scenarios. These scenarios are able to communicate and/or synchronise depending on a given context thanks to the JADE platform and instruct specific commands to the robot.",
+                    "A dedicated web editor has also been developed to help end-users to conceive their interaction scenarios while allowing a visual representation of them and ensuring conceived models robustness through several model checking properties."
                 ],
                 "skills": [
                     "Java",
                     "JAXB",
-                    "data modelling",
+                    "Data modelling",
                     "XML",
                     "JavaScript"
                 ]
@@ -135,7 +176,9 @@
                 "location": "La Rochelle, France",
                 "description": "Enhanced museum visitors experience by creating a companion mobile application and provided information visualisation to the personnel by collecting usage data.",
                 "details": [
-                    "Nope"
+                    "My work during this internship aimed to answer a specific demand from the Natural Science Museum of La Rochelle: offering an application installed on available tablets for its visitors. This application would help people to visit the museum while offering some content linked to the different thematics of the rooms.",
+                    "I had to continue a previous work from a master's degree student to develop functionnalities and finalise some aspects: support of multiple languages, additional content link sound or videos, plans display, etc. All the work provided was developed for Android tablets, therefore using Java to conceive the native Android app.",
+                    "Aside of this was a dedicated user interface to display collected data of the visits using the application, previsouly collected with consent and sent to a server. Different figures were chosen to help understand which rooms are the most popular, the paths followed by visitors..."
                 ],
                 "skills": [
                     "Android native",
@@ -151,7 +194,8 @@
                 "location": "La Rochelle, France",
                 "description": "Participated in several web development projects for multiple clients, mainly involving need assessment while adding or updating content and functionnalities.",
                 "details": [
-                    "Nope"
+                    "As part of this \"First Steps in Business\" internship, I have been involved in day to day development requirements of the communication agency. Even if my role was mainly to modify websites content, it is the contact with different clients that was probably the most interesting part.",
+                    "Understanding their needs and trying to answer it precisely were key parts of my work."
                 ],
                 "skills": [
                     "JavaScript",
@@ -175,7 +219,7 @@
                 "description": [
                     "Five-year based master's degree from September 2015 to July 2020 following the bachelor's master's doctorate European educational system, with three first years dedicated to a bachelor’s degree in Software Development followed by two years of the master's degree."
                 ],
-                "link": "#",
+                "link": "https://www.dropbox.com/s/fslt1u6dg3nr4sa/attestation-reussite-master.pdf?dl=0",
                 "detailedContent": [
                     {
                         "title": "MSc Computer Science in Software Engineering",
@@ -205,7 +249,7 @@
                                 "link": "#"
                             }
                         ],
-                        "link": "#"
+                        "link": "https://www.dropbox.com/s/fslt1u6dg3nr4sa/attestation-reussite-master.pdf?dl=0"
                     },
                     {
                         "title": "BSc Computer Science in Software Development",
@@ -229,7 +273,7 @@
                                 "link": "#"
                             }
                         ],
-                        "link": "#"
+                        "link": "https://www.dropbox.com/s/srqpleppf9vzfk8/diplome_licence.pdf?dl=0"
                     },
                     {
                         "title": "Erasmus+ semester - NUIG",
@@ -242,8 +286,7 @@
                         "result": "Labelled - July 2020",
                         "description": [
                             "Complementary five-year university programme attended from Septembre 2015 to June 2020 focused on communication, business, and research. Additional courses compared to the basic bachelor's master's system were attended, aiming to develop engineering competencies and the ability of abstraction."
-                        ],
-                        "link": "#"
+                        ]
                     }
                 ]
             },
@@ -254,7 +297,7 @@
                 "description": [
                     "Obtained with further Physics and Chemistry. Equivalent of A or A* in Mathematics, Engineering and Philosophy, equivalent of B in Physics & Chemistry, English and Spanish."
                 ],
-                "link": "#"
+                "link": "https://www.dropbox.com/s/8k5a2nd58i690db/bac.pdf?dl=0"
             }
         ]
     },

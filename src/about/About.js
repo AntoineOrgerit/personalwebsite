@@ -8,6 +8,7 @@ import React from 'react';
 import { Typography, Row, Col, Tag, Button } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { CommentOutlined, FileDoneOutlined, CodeOutlined, PushpinOutlined } from '@ant-design/icons';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Certifications from './Certifications';
 
@@ -36,19 +37,25 @@ export default function About() {
                 <Button className="resume-download" href={process.env.PUBLIC_URL + "/resume/resume_antoine_orgerit.pdf"} target="_blank">{t("about.presentation.resumeButton")}</Button>
             </Col>
         </Row>
-        <Row className="skills-section">
-            <Col>
-                <Title level={4}><CodeOutlined /> {t("about.knowledge.heading")}</Title>
-                <Paragraph>{t("about.knowledge.content")}</Paragraph>
-                <Paragraph>{t("about.knowledge.skills.soft", { returnObjects: true }).map((skill, index) =>
-                    <Tag key={index}>{skill}</Tag>
-                )}</Paragraph>
-                <Paragraph>{t("about.knowledge.skills.hard", { returnObjects: true }).map((skill, index) =>
-                    <Tag key={index}>{skill}</Tag>
-                )}</Paragraph>
-            </Col>
-        </Row>
-        <Certifications icon={<FileDoneOutlined />} heading={t("about.itCertifications.heading")} description={t("about.itCertifications.description")} certifications={t("about.itCertifications.certifications", { returnObjects: true })} />
-        <Certifications icon={<CommentOutlined />} heading={t("about.languagesCertifications.heading")} description={t("about.languagesCertifications.description")} certifications={t("about.languagesCertifications.certifications", { returnObjects: true })} />
-    </div>;
+        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
+            <Row className="skills-section">
+                <Col>
+                    <Title level={4}><CodeOutlined /> {t("about.knowledge.heading")}</Title>
+                    <Paragraph>{t("about.knowledge.content")}</Paragraph>
+                    <Paragraph>{t("about.knowledge.skills.soft", { returnObjects: true }).map((skill, index) =>
+                        <Tag key={index}>{skill}</Tag>
+                    )}</Paragraph>
+                    <Paragraph>{t("about.knowledge.skills.hard", { returnObjects: true }).map((skill, index) =>
+                        <Tag key={index}>{skill}</Tag>
+                    )}</Paragraph>
+                </Col>
+            </Row>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
+            <Certifications icon={<FileDoneOutlined />} heading={t("about.itCertifications.heading")} description={t("about.itCertifications.description")} certifications={t("about.itCertifications.certifications", { returnObjects: true })} />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
+            <Certifications icon={<CommentOutlined />} heading={t("about.languagesCertifications.heading")} description={t("about.languagesCertifications.description")} certifications={t("about.languagesCertifications.certifications", { returnObjects: true })} />
+        </ScrollAnimation>
+    </div >;
 }

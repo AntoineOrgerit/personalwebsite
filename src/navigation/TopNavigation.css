@@ -8,9 +8,7 @@
 
 #top-navigation-container {
     padding: 0 10%;
-    border-bottom: 1px solid;
-    border-image-source: linear-gradient(to bottom, rgba(185, 165, 99, 0.8), rgba(185, 165, 99, 1));
-    border-image-slice: 1;
+    border-bottom: 1px solid #B9A563;
 }
 
 @media all and (max-width: 1026px) {
@@ -109,11 +107,13 @@
     font-weight: 600;
     font-size: 100%;
     text-align: left;
+    line-height: 1;
 }
 
 #top-navigation-container .top-navigation-logo-container h1 .name-it-highlight {
     color: #B9A563;
     display: contents;
+    margin-right: 1.4pt;
 }
 
 @media all and (max-width: 876px) {

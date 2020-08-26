@@ -4,12 +4,14 @@
  * license that can be found in the LICENSE file.
  */
 
+/* general style of experience layout */
+
 #experience-container .ant-timeline .ant-timeline-item-last .ant-timeline-item {
     padding-bottom: 0;
 }
 
 #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-label {
-    width: 15%;
+    width: 15.5%;
     top: -1px;
     position: absolute;
     text-align: right;
@@ -19,7 +21,7 @@
 #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-head {
     width: 16px;
     height: 16px;
-    left: calc(15% + 14px);
+    left: calc(15.5% + 14px);
     border-width: 1.5px;
     top: 0;
     background-color: black;
@@ -32,28 +34,28 @@
 #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-tail {
     height: calc(100% - 20px);
     top: 16px;
-    left: calc(15% + 21px);
+    left: calc(15.5% + 21px);
     border-width: 1.5px;
 }
 
 #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-content {
-    width: calc(85% - 41px);
-    left: calc(15% + 15px);
+    width: calc(84.5% - 41px);
+    left: calc(15.5% + 15px);
     top: -4px;
 }
 
 @media all and (max-width: 591px) {
     #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-label {
-        width: 69px;
+        width: 72px;
     }
     #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-head {
-        left: 83px;
+        left: 86px;
     }
     #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-tail {
-        left: 90px;
+        left: 93px;
     }
     #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-content {
-        left: 83px;
-        width: calc(100% - 109px);
+        left: 86px;
+        width: calc(100% - 112px);
     }
 }
