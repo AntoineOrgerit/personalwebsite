@@ -306,6 +306,9 @@
             }
         ]
     },
+    "projects": {
+        "heading": "Projects"
+    },
     "contact": {
         "information": {
             "heading": "Interested to get in touch with me?",
