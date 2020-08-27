@@ -10,6 +10,7 @@ import { Typography, Button, Collapse, Tag } from 'antd';
 import { BranchesOutlined, LaptopOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import './EducationInformation.css';
 
@@ -75,7 +76,7 @@ export default function EducationInformation(props) {
                                     <Paragraph className="education-experience"><LaptopOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                                             detail.experience.map((internship, internshipIndex) => (
-                                                <Tag key={internshipIndex} type="link" size="small"><Link to={internship.link}>{internship.title}</Link></Tag>
+                                                <Tag key={internshipIndex} type="link" size="small"><HashLink to={internship.link}>{internship.title}</HashLink></Tag>
                                             ))
                                         }
                                     </Paragraph>
@@ -107,7 +108,7 @@ export default function EducationInformation(props) {
             <Paragraph className="education-experience"><LaptopOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                     education.experience.map((internship, internshipIndex) => (
-                        <Tag key={internshipIndex} type="link" size="small"><Link to={internship.link}>{internship.title}</Link></Tag>
+                        <Tag key={internshipIndex} type="link" size="small"><HashLink to={internship.link}>{internship.title}</HashLink></Tag>
                     ))
                 }
             </Paragraph>
