@@ -34,7 +34,7 @@
             "button": "En savoir plus sur moi"
         },
         "experienceSection": {
-            "heading": "Expérience et intérêt variés",
+            "heading": "Expériences et intérêts variés",
             "content": "L'expérience est ce qui importe probablement le plus, autant à travers les compétences mises en place que les enjeux dont on essaye de répondre. Si mon expérience professionelle reflète ma curiosité sur la plupart des sujets informatiques (intérêts publics ou privés, domaine de la recherche, pratiques...), je reste néanmoins majoritairement orienté vers les enjeux du développement Full Stack : modélisation de données, exposition de services web, solutions front-end web ou mobiles...",
             "button": "Consulter mon expérience"
         },
@@ -136,7 +136,7 @@
                 "location": "Niort, France",
                 "description": "Développement de deux modules dans le cadre d'un outil interne de pilotage des projets, incluant différents aspects financiers et des indicateurs de qualité pour un contrat.",
                 "details": [
-                    "Durant mon stage de fin d'études, j'ai eu l'occasion de travailler sur un outil de pilotage intern visant à offrir à différents utilisateurs des indicateurs dans le cadre de la gestion des projets de l'entreprise. J'ai été en charge des modules du récapitulatif financier et de la vision générale des indicateurs de qualité, tant en interfaçage avec un second outil interne pour le premier que de manière indépendante pour le second.",
+                    "Durant mon stage de fin d'études, j'ai eu l'occasion de travailler sur un outil de pilotage interne visant à offrir à différents utilisateurs des indicateurs dans le cadre de la gestion des projets de l'entreprise. J'ai été en charge des modules du récapitulatif financier en interfaçage avec un autre outil interne et de la vision générale des indicateurs de qualité.",
                     "Grâce aux spécifications transmises, j'ai été en capacité de développer ces modules du back-end (structures de données, services, gestion des requêtes...) vers le front-end (interface générale, expérience utilisateur, consommation des services web...).",
                     "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
                     "These modules are now integrated to the global solution and will be soon brought to use by different people."
@@ -152,7 +152,7 @@
             },
             {
                 "period": "Avr. 2019 - Juill. 2019",
-                "title": "Stagiraire Développeur Java",
+                "title": "Stagiaire Développeur Java",
                 "company": "Laboratoire L3i",
                 "location": "La Rochelle, France",
                 "description": "Amélioration des scénarios d’interaction des robots Nao et Pepper par l’introduction d’une nouvelle modélisation à base de graphes de contexte, tout en assurant la robustesse des modèles produits par le biais d’un vérificateur de propriétés dédié.",
@@ -169,7 +169,7 @@
             },
             {
                 "period": "Avr. 2018 - Juin 2018",
-                "title": "Stagiraire Développeur Android",
+                "title": "Stagiaire Développeur Android",
                 "company": "Laboratoire L3i",
                 "location": "La Rochelle, France",
                 "description": "Plus-value de l’expérience des visiteurs du Muséum de La Rochelle par la mise à disposition d’une application compagnon sur tablettes numériques et le fournissement au personnel d’une visualisation des informations récoltées des différentes visites.",
@@ -185,7 +185,7 @@
             },
             {
                 "period": "Août 2016",
-                "title": "Stagiraire Développeur Web",
+                "title": "Stagiaire Développeur Web",
                 "company": "Agence de Communication PlusCom",
                 "location": "La Rochelle, France",
                 "description": "Participation dans plusieurs projets de développement web pour différents clients, impliquant principalement l'étude des besoins tout en apportant des ajouts ou modifications sur du contenu ou des fonctionnalités.",
@@ -294,7 +294,7 @@
     "contact": {
         "information": {
             "heading": "Vous souhaitez me contacter ?",
-            "content": "Pour discuter d'un projet, d'une opportunité ou pour simplement obtenir plus d'informations sur moi, vous pouvez utiliser mes informations de contact pour m'envoyer un e-mail ou un message via LinkedIn ou WhatsApp. Vous pouvez également consulter mes différents profiles sur le web.",
+            "content": "Pour discuter d'un projet, d'une opportunité ou pour simplement obtenir plus d'informations sur moi, vous pouvez utiliser mes informations de contact pour m'envoyer un e-mail ou un message via LinkedIn ou WhatsApp. Vous pouvez également consulter mes différents profils sur le web.",
             "websiteRequest": "Une suggestion concernant ce site ou vous avez remarqué un bug ? Merci de m'envoyer un e-mail à "
         },
         "emailHeading": "Par e-mail",
