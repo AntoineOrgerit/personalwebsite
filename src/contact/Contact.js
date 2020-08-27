@@ -17,18 +17,27 @@ const { Title, Paragraph } = Typography;
  * Component used as the contact web page.
  * 
  * @author Antoine Orgerit
- * @version 1.0
+ * @version 1.1
  */
 export default function Contact() {
     const { t } = useTranslation();
+
+    /**
+     * Allows to correctly format text in the contact page, mainly for French syntax rules of interrogation points.
+     * 
+     * @param {String} text the text to format
+     */
+    const formatText = text => {
+        return text.replace(/ \?/g, "\u00a0?");
+    };
 
     return <div id="contact-container">
         <Title level={3}>Contact</Title>
         <Row gutter={[48, 36]}>
             <Col md={12} xs={24} sm={24}>
-                <Title level={4}>{t("contact.information.heading")}</Title>
+                <Title level={4}>{formatText(t("contact.information.heading"))}</Title>
                 <Paragraph>{t("contact.information.content")}</Paragraph>
-                <Paragraph type="secondary">{t("contact.information.websiteRequest")} <a href="mailto:orgerit.antoine@gmail.com">orgerit.antoine@gmail.com</a>.</Paragraph>
+                <Paragraph type="secondary">{formatText(t("contact.information.websiteRequest"))} <a href="mailto:orgerit.antoine@gmail.com">orgerit.antoine@gmail.com</a>.</Paragraph>
             </Col>
             <Col className="links-container" md={12} xs={24} sm={24} style={{paddingBottom: "0"}}>
                 <Row gutter={[0, 36]}>
