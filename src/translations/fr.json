@@ -130,6 +130,7 @@
         "heading": "Expériences Professionnelles",
         "items": [
             {
+                "bookmark": "2020-gfi-full-stack-developer",
                 "period": "Févr. 2020 - Juin 2020",
                 "title": "Stagiaire Développeur Full Stack",
                 "company": "Gfi Informatique",
@@ -151,6 +152,7 @@
                 ]
             },
             {
+                "bookmark": "2019-l3i-java-developer",
                 "period": "Avr. 2019 - Juill. 2019",
                 "title": "Stagiaire Développeur Java",
                 "company": "Laboratoire L3i",
@@ -168,6 +170,7 @@
                 ]
             },
             {
+                "bookmark": "2018-l3i-android-developer",
                 "period": "Avr. 2018 - Juin 2018",
                 "title": "Stagiaire Développeur Android",
                 "company": "Laboratoire L3i",
@@ -184,6 +187,7 @@
                 ]
             },
             {
+                "bookmark": "2016-pluscom-web-developer",
                 "period": "Août 2016",
                 "title": "Stagiaire Développeur Web",
                 "company": "Agence de Communication PlusCom",
@@ -228,11 +232,11 @@
                 "experience": [
                     {
                         "title": "Développeur Full Stack",
-                        "link": "#"
+                        "link": "/experience#2020-gfi-full-stack-developer"
                     },
                     {
                         "title": "Développeur Java",
-                        "link": "#"
+                        "link": "/experience#2019-l3i-java-developer"
                     }
                 ],
                 "link": "https://www.dropbox.com/s/fslt1u6dg3nr4sa/attestation-reussite-master.pdf?dl=0"
@@ -270,11 +274,11 @@
                 "experience": [
                     {
                         "title": "Développeur Android",
-                        "link": "#"
+                        "link": "/experience#2018-l3i-android-developer"
                     },
                     {
                         "title": "Développeur Web",
-                        "link": "#"
+                        "link": "/experience#2016-pluscom-web-developer"
                     }
                 ],
                 "link": "https://www.dropbox.com/s/srqpleppf9vzfk8/diplome_licence.pdf?dl=0"

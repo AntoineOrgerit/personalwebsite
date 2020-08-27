@@ -20,12 +20,12 @@ const { Panel } = Collapse;
  * @param {Object} props the properties of the given component
  * 
  * @author Antoine Orgerit
- * @version 1.2
+ * @version 2.0
  */
 export default function ExperienceInformation(props) {
     const experience = props.experience;
 
-    return <div className="experience-information-container">
+    return <div id={experience.bookmark} className="experience-information-container">
         <Row className="experience-information-header" gutter={[16, 0]}>
             <Col flex="auto" className="experience-title"><Title level={4}>{experience.title}</Title></Col>
             <Col className="experience-company"><Text><EnvironmentOutlined />&nbsp;{experience.company}, {experience.location}</Text></Col>
@@ -48,6 +48,7 @@ export default function ExperienceInformation(props) {
 
 ExperienceInformation.propTypes = {
     experience: PropTypes.shape({
+        bookmark: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         company: PropTypes.string.isRequired,
         location: PropTypes.string.isRequired,
