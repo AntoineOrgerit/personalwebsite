@@ -34,7 +34,7 @@
             "button": "En savoir plus sur moi"
         },
         "experienceSection": {
-            "heading": "Expérience et intérêt variés",
+            "heading": "Expériences et intérêts variés",
             "content": "L'expérience est ce qui importe probablement le plus, autant à travers les compétences mises en place que les enjeux dont on essaye de répondre. Si mon expérience professionelle reflète ma curiosité sur la plupart des sujets informatiques (intérêts publics ou privés, domaine de la recherche, pratiques...), je reste néanmoins majoritairement orienté vers les enjeux du développement Full Stack : modélisation de données, exposition de services web, solutions front-end web ou mobiles...",
             "button": "Consulter mon expérience"
         },
@@ -128,18 +128,20 @@
     },
     "experiences": {
         "heading": "Expériences Professionnelles",
+        "seeMore": "Voir plus",
         "items": [
             {
+                "bookmark": "2020-gfi-full-stack-developer",
                 "period": "Févr. 2020 - Juin 2020",
                 "title": "Stagiaire Développeur Full Stack",
                 "company": "Gfi Informatique",
                 "location": "Niort, France",
                 "description": "Développement de deux modules dans le cadre d'un outil interne de pilotage des projets, incluant différents aspects financiers et des indicateurs de qualité pour un contrat.",
                 "details": [
-                    "Durant mon stage de fin d'études, j'ai eu l'occasion de travailler sur un outil de pilotage intern visant à offrir à différents utilisateurs des indicateurs dans le cadre de la gestion des projets de l'entreprise. J'ai été en charge des modules du récapitulatif financier et de la vision générale des indicateurs de qualité, tant en interfaçage avec un second outil interne pour le premier que de manière indépendante pour le second.",
+                    "Durant mon stage de fin d'études, j'ai eu l'occasion de travailler sur un outil de pilotage interne visant à offrir à différents utilisateurs des indicateurs dans le cadre de la gestion des projets de l'entreprise. J'ai été en charge des modules du récapitulatif financier en interfaçage avec un autre outil interne et de la vision générale des indicateurs de qualité.",
                     "Grâce aux spécifications transmises, j'ai été en capacité de développer ces modules du back-end (structures de données, services, gestion des requêtes...) vers le front-end (interface générale, expérience utilisateur, consommation des services web...).",
-                    "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
-                    "These modules are now integrated to the global solution and will be soon brought to use by different people."
+                    "J'ai également été confronté à différents enjeux de sécurité et des aspects de bonnes pratiques grâce à une analyse Fortify générale et des réflexions personnelles portant sur les ressources à manipuler.",
+                    "Ces modules sont désormais intégrés à l'ensemble de l'outil interne et seront bientôt disponibles auprès des utilisateurs finaux."
                 ],
                 "skills": [
                     "ReactJS",
@@ -151,30 +153,36 @@
                 ]
             },
             {
+                "bookmark": "2019-l3i-java-developer",
                 "period": "Avr. 2019 - Juill. 2019",
-                "title": "Stagiraire Développeur Java",
+                "title": "Stagiaire Développeur Java",
                 "company": "Laboratoire L3i",
                 "location": "La Rochelle, France",
                 "description": "Amélioration des scénarios d’interaction des robots Nao et Pepper par l’introduction d’une nouvelle modélisation à base de graphes de contexte, tout en assurant la robustesse des modèles produits par le biais d’un vérificateur de propriétés dédié.",
                 "details": [
-                    "Nope"
+                    "Dans le cadre du domaine générale de recherche e-culture portant sur les innovations digitales dans les musées et lieux culturel du Laboratoire L3i, j'ai été amené à travailler sur le robot Pepper et ses interactions avec les visiteurs. Une nouvelle modélisation de ses scénarios d'interaction a été plus particulièrement conçue pour le rendre plus dynamique.",
+                    "Guidé par mon enseignant-chercheur référant, j'ai utilisé les graphes de contexte pour développer une nouvelle modélisation en Java permettant d'exécuter différents scénarios d'interaction. Ces derniers sont capables de communiquer et/ou de se synchroniser en fonction d'un contexte d'évolution particulier grâce à la plateforme JADE et de faire exécuter des instructions spécifique au robot.",
+                    "Un éditeur web dédié a également été développé pour aider les utilisateurs finaux à concevoir leurs scénarios d'interaction tout en offrant une représentation visuelle de ces derniers et en assurant la robustesse des modèles produits à travers la vérification de différentes propriétés."
                 ],
                 "skills": [
                     "Java",
                     "JAXB",
-                    "data modelling",
+                    "Data modelling",
                     "XML",
                     "JavaScript"
                 ]
             },
             {
+                "bookmark": "2018-l3i-android-developer",
                 "period": "Avr. 2018 - Juin 2018",
-                "title": "Stagiraire Développeur Android",
+                "title": "Stagiaire Développeur Android",
                 "company": "Laboratoire L3i",
                 "location": "La Rochelle, France",
                 "description": "Plus-value de l’expérience des visiteurs du Muséum de La Rochelle par la mise à disposition d’une application compagnon sur tablettes numériques et le fournissement au personnel d’une visualisation des informations récoltées des différentes visites.",
                 "details": [
-                    "Nope"
+                    "Mon travail durant se stage visait à répondre à une demande spécifique de la part du Muséum d'Histoire Naturelle de La Rochelle : proposer à ses visiteurs une application sur différentes tablettes mises à disposition. Cette dernière se positionne en tant qu'application compagnon à la visite du muséum tout en offrant du contenu thématique en fonction des salles visitées.",
+                    "J'ai alors continué le travail d'un précédent étudiant de Licence Informatique afin de développer des fonctionnalités et finaliser certains aspects : support de plusieurs langues, contenu additionnel audio ou vidéo, affichage des plans du muséum, etc. Les tablettes utilisées fonctionnant sous Android, l'ensemble du travail réalisé utilise donc le language Java pour concevoir une application Android native.",
+                    "En se basant sur des données collectées durant l'utilisation de l'application avec le consentement de l'utilisateur, une interface web a également été proposée à destination du personnel du muséum. Différentes visualisations ont été intégrées pour tenter de définir les salles les plus visitées, les trajets suivis par les visiteurs..."
                 ],
                 "skills": [
                     "Android native",
@@ -184,13 +192,15 @@
                 ]
             },
             {
+                "bookmark": "2016-pluscom-web-developer",
                 "period": "Août 2016",
-                "title": "Stagiraire Développeur Web",
+                "title": "Stagiaire Développeur Web",
                 "company": "Agence de Communication PlusCom",
                 "location": "La Rochelle, France",
                 "description": "Participation dans plusieurs projets de développement web pour différents clients, impliquant principalement l'étude des besoins tout en apportant des ajouts ou modifications sur du contenu ou des fonctionnalités.",
                 "details": [
-                    "Nope"
+                    "Dans le cadre de ce stage \"Découverte de l'Entreprise\", j'ai participé aux différents besoins de développement web de l'agence de communication. Si la modification de contenu constituait la grande majorité de mon rôle, ce sont les contacts avec les clients qui constituent probablement le plus grand intérêt de ce stage.",
+                    "La compréhension de leurs besoins et tenter d'y répondre avec précision ont été des composants clefs de mon travail."
                 ],
                 "skills": [
                     "JavaScript",
@@ -213,7 +223,7 @@
                 "result": "Mention Bien - La Rochelle Université - Juillet 2020",
                 "description": [
                     "Diplôme de Master suivi de Septembre 2018 à Juin 2020 à La Rochelle Université, France. Les thématiques abordées durant mes études incluent notamment le développement de services web, l'ingénierie logicielle et les métriques de qualité, les méthodes agiles, la programmation concurrente et parallèle, la mobilité et les SIG, le big data et le Web 3.0. Certains sujets complémentaires concernent la communication, l'informatique durable, la propriété industrielle, le droit du numérique, la recherche et le marketing.",
-                    "Par le biais des projets et des expériences entrepris durant ce cursus en addition à l'ensemble des connaissances acquises, mon parcours en Master a été un véritable tremplin vers le monde professionnel."
+                    "Par le biais des projets et des expériences professionnelles entrepris durant ce cursus, mon parcours en Master a été un véritable tremplin vers le monde professionnel en addition à l'ensemble des connaissances acquises."
                 ],
                 "linkedProjects": [
                     {
@@ -228,11 +238,11 @@
                 "experience": [
                     {
                         "title": "Développeur Full Stack",
-                        "link": "#"
+                        "link": "/experience#2020-gfi-full-stack-developer"
                     },
                     {
                         "title": "Développeur Java",
-                        "link": "#"
+                        "link": "/experience#2019-l3i-java-developer"
                     }
                 ],
                 "link": "https://www.dropbox.com/s/fslt1u6dg3nr4sa/attestation-reussite-master.pdf?dl=0"
@@ -250,7 +260,7 @@
                 "title": "Semestre Erasmus+",
                 "description": [
                     "Semestre Erasmus+ effectué de Septembre à Décembre 2017 à la National University of Ireland Galway dans le cadre de la troisième année du diplôme de Licence.",
-                    "C'est par le biais de cette première expérience à l'étranger que ma carrière professionnelle a évoluée vers l'international tout en renforçant mes connaissances du domaine d'un point de vue tant commun que différencié."
+                    "C'est par le biais de cette première expérience à l'étranger que ma carrière professionnelle a évoluée vers l'international tout en renforçant mes connaissances en adoptant un point de vue quelque peu différencié sur le domaine informatique."
                 ]
             },
             {
@@ -258,7 +268,7 @@
                 "title": "Licence Informatique Parcours Développement Logiciel",
                 "result": "Mention Très Bien - Juin 2018",
                 "description": [
-                    "Diplôme de Licence suivi de Septembre 2015 à Juin 2018, incluant un semestre Erasmus+ à la National University of Ireland Galway. Les différentes compétences offertes couvrent notamment les différents paradigmes de programmation (orienté objet, fonctionnelle, impérative...), le développement web, des concepts généraux et bonnes pratiques de programmation, et le développement front-end, back-end et mobile.",
+                    "Diplôme de Licence suivi de Septembre 2015 à Juin 2018, incluant un semestre Erasmus+ à la National University of Ireland Galway. Les différentes compétences offertes couvrent notamment les différents paradigmes de programmation (orientée objet, fonctionnelle, impérative...), le développement web, des concepts généraux et bonnes pratiques de programmation, et le développement front-end, back-end et mobile.",
                     "Même si les plus grands apports de cette formation sont particulièrement l'appropriation de différents langages de programmation et plus généralement des principes qui les composent, elle m'a également permis de conforter mes choix de carrière tout en me donnant envie d'aller plus loin et parfois de manière plus abstraite dans les sujets composant l'informatique."
                 ],
                 "linkedProjects": [
@@ -270,11 +280,11 @@
                 "experience": [
                     {
                         "title": "Développeur Android",
-                        "link": "#"
+                        "link": "/experience#2018-l3i-android-developer"
                     },
                     {
                         "title": "Développeur Web",
-                        "link": "#"
+                        "link": "/experience#2016-pluscom-web-developer"
                     }
                 ],
                 "link": "https://www.dropbox.com/s/srqpleppf9vzfk8/diplome_licence.pdf?dl=0"
@@ -294,7 +304,7 @@
     "contact": {
         "information": {
             "heading": "Vous souhaitez me contacter ?",
-            "content": "Pour discuter d'un projet, d'une opportunité ou pour simplement obtenir plus d'informations sur moi, vous pouvez utiliser mes informations de contact pour m'envoyer un e-mail ou un message via LinkedIn ou WhatsApp. Vous pouvez également consulter mes différents profiles sur le web.",
+            "content": "Pour discuter d'un projet, d'une opportunité ou pour simplement obtenir plus d'informations sur moi, vous pouvez utiliser mes informations de contact pour m'envoyer un e-mail ou un message via LinkedIn ou WhatsApp. Vous pouvez également consulter mes différents profils sur le web.",
             "websiteRequest": "Une suggestion concernant ce site ou vous avez remarqué un bug ? Merci de m'envoyer un e-mail à "
         },
         "emailHeading": "Par e-mail",

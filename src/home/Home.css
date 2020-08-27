@@ -75,22 +75,30 @@
 
 /* home items style */
 
-@media all and (min-width: 768px) {
-    .home-item-container:not(:last-of-type) {
-        margin-bottom: 80px;
-    }
+.home-item-container {
+    margin-top: 10vh;
 }
 
 .home-item-container .home-item-img {
     width: 100%;
     height: 100%;
+    min-height: 15vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.home-item-container .home-item-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .45);
 }
 
 .home-item-container .home-item-content {
-    padding: 50px 0;
+    padding: 35px 0;
 }
 
 .home-item-container .home-item-content h3 {

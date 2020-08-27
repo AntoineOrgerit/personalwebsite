@@ -41,7 +41,7 @@ export default function Experience() {
             {
                 experiences.items.map((experience, index) => (
                     <ScrollAnimation key={index} animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
-                        <Timeline.Item label={formatPeriod(experience.period)}>
+                        <Timeline.Item id={experience.bookmark} label={formatPeriod(experience.period)}>
                             <ExperienceInformation experience={experience} />
                         </Timeline.Item>
                     </ScrollAnimation>

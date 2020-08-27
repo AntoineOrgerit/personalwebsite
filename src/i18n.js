@@ -28,7 +28,7 @@ i18n
         load: 'languageOnly',
         fallbackLng: 'en',
         useSuspense: false,
-        debug: true,
+        /*debug: true,*/
         interpolation: {
             escapeValue: false,
         }
