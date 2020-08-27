@@ -128,6 +128,7 @@
     },
     "experiences": {
         "heading": "Expériences Professionnelles",
+        "seeMore": "Voir plus",
         "items": [
             {
                 "bookmark": "2020-gfi-full-stack-developer",
@@ -139,8 +140,8 @@
                 "details": [
                     "Durant mon stage de fin d'études, j'ai eu l'occasion de travailler sur un outil de pilotage interne visant à offrir à différents utilisateurs des indicateurs dans le cadre de la gestion des projets de l'entreprise. J'ai été en charge des modules du récapitulatif financier en interfaçage avec un autre outil interne et de la vision générale des indicateurs de qualité.",
                     "Grâce aux spécifications transmises, j'ai été en capacité de développer ces modules du back-end (structures de données, services, gestion des requêtes...) vers le front-end (interface générale, expérience utilisateur, consommation des services web...).",
-                    "I have also faced different stakes concerning security and good practices aspects thanks to a general Fortify analysis and personal reflections given the ressources I was manipulating.",
-                    "These modules are now integrated to the global solution and will be soon brought to use by different people."
+                    "J'ai également été confronté à différents enjeux de sécurité et des aspects de bonnes pratiques aspects grâce à une analyse Fortify générale et des réflexions personnelles portant sur les ressources à manipuler.",
+                    "Ces modules sont désormais intégrés à l'ensemble de l'outil interne et seront bientôt utilisés par les utilisateurs finaux."
                 ],
                 "skills": [
                     "ReactJS",
@@ -159,12 +160,14 @@
                 "location": "La Rochelle, France",
                 "description": "Amélioration des scénarios d’interaction des robots Nao et Pepper par l’introduction d’une nouvelle modélisation à base de graphes de contexte, tout en assurant la robustesse des modèles produits par le biais d’un vérificateur de propriétés dédié.",
                 "details": [
-                    "Nope"
+                    "Dans le cadre du domaine générale de recherche e-culture portant sur les innovations digitales dans les musées et lieux culturel du Laboratoire L3i, j'ai été amené à travailler sur le robot Pepper et ses interactions avec les visiteurs. Une nouvelle modélisation de ses scénarios d'interaction a été plus particulièrement conçue pour le rendre plus dynamique.",
+                    "Guidé par mon enseignant-chercheur référant, j'ai utilisé les graphes de contexte pour développer une nouvelle modélisation en Java permettant d'exécuter différents scénarios d'interaction. Ces derniers sont capables de communiquer et/ou de se synchroniser en fonction d'un contexte d'évolution particulier grâce à la plateforme JADE et de faire exécuter des instructions spécifique au robot.",
+                    "Un éditeur web dédié a également été développé pour aider les utilisateurs finaux à concevoir leurs scénarios d'interaction tout en offrant une représentation visuelle de ces derniers et en assurant la robustesse des modèles produits à travers la vérification de différentes propriétés."
                 ],
                 "skills": [
                     "Java",
                     "JAXB",
-                    "data modelling",
+                    "Data modelling",
                     "XML",
                     "JavaScript"
                 ]
@@ -177,7 +180,9 @@
                 "location": "La Rochelle, France",
                 "description": "Plus-value de l’expérience des visiteurs du Muséum de La Rochelle par la mise à disposition d’une application compagnon sur tablettes numériques et le fournissement au personnel d’une visualisation des informations récoltées des différentes visites.",
                 "details": [
-                    "Nope"
+                    "Mon travail durant se stage visait à répondre à une demande spécifique de la part du Muséum d'Histoire Naturelle de La Rochelle : proposer à ses visiteurs une application sur différentes tablettes disponibles. Cette application permet d'aider à la visite du muséum tout en offrant du contenu thématique en fonction des salles visitées.",
+                    "J'ai alors continué le travail d'un précédent étudiant du Master Informatique afin de développer de développer des fonctionnalités et finaliser certains aspects : support de plusieurs langues, contenu additionnel audio ou vidéo, affichage des plans du muséum, etc. Les tablettes utilisées fonctionnant sous Android, l'ensemble du travail réalisé utilise donc le language Java pour concevoir une application Android native.",
+                    "En se basant sur des données collectées durant l'utilisation de l'application avec le consentement de l'utilisateur, une interface web a également été proposée à destination du personnel du muséum. Différentes visualisations ont été intégrées pour tenter de définier les salles les plus visitées, les trajets suivis par les visiteurs..."
                 ],
                 "skills": [
                     "Android native",
@@ -194,7 +199,8 @@
                 "location": "La Rochelle, France",
                 "description": "Participation dans plusieurs projets de développement web pour différents clients, impliquant principalement l'étude des besoins tout en apportant des ajouts ou modifications sur du contenu ou des fonctionnalités.",
                 "details": [
-                    "Nope"
+                    "Dans le cadre de ce stage \"Découverte de l'Entreprise\", j'ai participé aux différents besoins de développement web de l'agence de communication. Si la modification de contenu constituait la grande majorité de mon rôle, ce sont les contacts avec les clients qui constituent probablement le plus grand intérêt de ce stage.",
+                    "La compréhension de leurs besoins et tenter d'y répondre avec précision ont été des composants clefs de mon travail."
                 ],
                 "skills": [
                     "JavaScript",

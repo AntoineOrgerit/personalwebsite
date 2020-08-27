@@ -8,6 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Col, Row, Tag, Collapse } from 'antd';
 import { EnvironmentOutlined } from '@ant-design/icons';
+import { useTranslation } from 'react-i18next';
 
 import './ExperienceInformation.css';
 
@@ -23,6 +24,8 @@ const { Panel } = Collapse;
  * @version 2.0
  */
 export default function ExperienceInformation(props) {
+    const { t } = useTranslation();
+
     const experience = props.experience;
 
     return <div id={experience.bookmark} className="experience-information-container">
@@ -33,7 +36,7 @@ export default function ExperienceInformation(props) {
         <Paragraph className="experience-information-description">{experience.description}</Paragraph>
         <Paragraph className="experience-information-details">
             <Collapse ghost>
-                <Panel header="See more">
+                <Panel header={t("experiences.seeMore")}>
                     {experience.details.map((detail, index) => {
                         return <Paragraph key={index}>{detail}</Paragraph>;
                     })}

@@ -6,6 +6,10 @@
 
 /* general style of experience layout */
 
+#experience-container .ant-timeline .ant-timeline-item {
+    padding-bottom: 2em;
+}
+
 #experience-container .ant-timeline .ant-timeline-item-last .ant-timeline-item {
     padding-bottom: 0;
 }
@@ -42,6 +46,7 @@
     width: calc(84.5% - 41px);
     left: calc(15.5% + 15px);
     top: -4px;
+    /*margin-bottom: 3em;*/
 }
 
 @media all and (max-width: 591px) {

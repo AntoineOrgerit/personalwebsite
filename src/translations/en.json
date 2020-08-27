@@ -128,6 +128,7 @@
     },
     "experiences": {
         "heading": "Experience",
+        "seeMore": "See more",
         "items": [
             {
                 "bookmark": "2020-gfi-full-stack-developer",
@@ -180,7 +181,7 @@
                 "description": "Enhanced museum visitors experience by creating a companion mobile application and provided information visualisation to the personnel by collecting usage data.",
                 "details": [
                     "My work during this internship aimed to answer a specific demand from the Natural Science Museum of La Rochelle: offering an application installed on available tablets for its visitors. This application would help people to visit the museum while offering some content linked to the different thematics of the rooms.",
-                    "I had to continue a previous work from a master's degree student to develop functionnalities and finalise some aspects: support of multiple languages, additional content link sound or videos, plans display, etc. All the work provided was developed for Android tablets, therefore using Java to conceive the native Android app.",
+                    "I had to continue a previous work from a master's degree student to develop functionnalities and finalise some aspects: support of multiple languages, additional content like sound or videos, plans display, etc. All the work provided was developed for Android tablets, therefore using Java to conceive the native Android app.",
                     "Aside of this was a dedicated user interface to display collected data of the visits using the application, previsouly collected with consent and sent to a server. Different figures were chosen to help understand which rooms are the most popular, the paths followed by visitors..."
                 ],
                 "skills": [
