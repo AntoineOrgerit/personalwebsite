@@ -16,6 +16,7 @@ import FullscreenParallax from './FullscreenParallax';
 import ProgrammingCityBackground from './resources/img/programming_city.jpg';
 import ComputerBackground from './resources/img/computer.jpg';
 import CodeBackground from './resources/img/code.jpg';
+import NotesBackground from './resources/img/notes.jpg'
 
 import './Home.css';
 
@@ -64,7 +65,7 @@ export default function Home() {
         <ScrollAnimation className="home-item-container" animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
             <Row gutter={[60, 0]}>
                 <Col xs={24} sm={24} md={8}>
-                    <div className="home-item-img" style={{ backgroundImage: `url(${ProgrammingCityBackground})` }} />
+                    <div className="home-item-img" style={{ backgroundImage: `url(${NotesBackground})` }} />
                 </Col>
                 <Col xs={24} sm={24} md={16}>
                     <div className="home-item-content">
