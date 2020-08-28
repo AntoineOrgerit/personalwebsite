@@ -1,0 +1,27 @@
+<!--
+ Copyright 2020 Antoine Orgerit. All rights reserved.
+ Use of this source code is governed by a BSD-style
+ license that can be found in the LICENSE file.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>http://www.antoineorgerit.com/</loc>
+  </url>
+  <url>
+    <loc>http://www.antoineorgerit.com/about</loc>
+  </url>
+  <url>
+    <loc>http://www.antoineorgerit.com/experience</loc>
+  </url>
+  <url>
+    <loc>http://www.antoineorgerit.com/education</loc>
+  </url>
+  <url>
+    <loc>http://www.antoineorgerit.com/projects</loc>
+  </url>
+  <url>
+    <loc>http://www.antoineorgerit.com/contact</loc>
+  </url>
+</urlset>

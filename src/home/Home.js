@@ -13,7 +13,10 @@ import { Link } from 'react-router-dom';
 
 import FullscreenParallax from './FullscreenParallax';
 
-import ProgrammingCityBackground from './resources/img/programming_city_edit.jpg';
+import ProgrammingCityBackground from './resources/img/programming_city.jpg';
+import ComputerBackground from './resources/img/computer.jpg';
+import CodeBackground from './resources/img/code.jpg';
+import NotesBackground from './resources/img/notes.jpg'
 
 import './Home.css';
 
@@ -61,7 +64,10 @@ export default function Home() {
         </div>
         <ScrollAnimation className="home-item-container" animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
             <Row gutter={[60, 0]}>
-                <Col md={16}>
+                <Col xs={24} sm={24} md={8}>
+                    <div className="home-item-img" style={{ backgroundImage: `url(${NotesBackground})` }} />
+                </Col>
+                <Col xs={24} sm={24} md={16}>
                     <div className="home-item-content">
                         <Title level={3}>{t("home.developerSection.heading")}</Title>
                         <Paragraph>{t("home.developerSection.content")}</Paragraph>
@@ -70,17 +76,14 @@ export default function Home() {
                         </div>
                     </div>
                 </Col>
-                <Col md={8}>
-                    <div className="home-item-img" style={{ backgroundImage: `url(${ProgrammingCityBackground})` }} />
-                </Col>
             </Row>
         </ScrollAnimation>
         <ScrollAnimation className="home-item-container" animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
             <Row gutter={[60, 0]}>
-                <Col md={8}>
-                    <div className="home-item-img" style={{ backgroundImage: `url(${ProgrammingCityBackground})` }} />
+                <Col xs={24} sm={24} md={{span: 8, push: 16 }}>
+                    <div className="home-item-img computer-img" style={{ backgroundImage: `url(${ComputerBackground})` }} />
                 </Col>
-                <Col md={16}>
+                <Col xs={24} sm={24} md={{span: 16, pull: 8 }}>
                     <div className="home-item-content">
                         <Title level={3}>{t("home.experienceSection.heading")}</Title>
                         <Paragraph>{t("home.experienceSection.content")}</Paragraph>
@@ -93,7 +96,10 @@ export default function Home() {
         </ScrollAnimation>
         <ScrollAnimation className="home-item-container" animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
             <Row gutter={[60, 0]}>
-                <Col md={16}>
+                <Col xs={24} sm={24} md={8}>
+                    <div className="home-item-img" style={{ backgroundImage: `url(${CodeBackground})` }} />
+                </Col>
+                <Col xs={24} sm={24} md={16}>
                     <div className="home-item-content">
                         <Title level={3}>{t("home.projectsSection.heading")}</Title>
                         <Paragraph>{t("home.projectsSection.content")}</Paragraph>
@@ -101,9 +107,6 @@ export default function Home() {
                             <Link className="ant-btn" to="/projects">{t("home.projectsSection.button")}</Link>
                         </div>
                     </div>
-                </Col>
-                <Col md={8}>
-                    <div className="home-item-img" style={{ backgroundImage: `url(${ProgrammingCityBackground})` }} />
                 </Col>
             </Row>
         </ScrollAnimation>

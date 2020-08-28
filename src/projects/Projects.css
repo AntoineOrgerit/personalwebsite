@@ -1,0 +1,15 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* general style of the page */
+
+#projects-container > div:not(:last-of-type) {
+    padding-bottom: 2.5em;
+}
+
+#projects-container > div:not(:first-of-type) {
+    padding-top: 2.5em;
+}

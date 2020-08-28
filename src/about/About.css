@@ -7,7 +7,7 @@
 /* general layout style */
 
 #about-container > div:not(:last-of-type) {
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 /* title particular style */
@@ -23,11 +23,11 @@
 
 /* style of the presentation container */
 
-#about-container .presentation-container {
-    padding: 1em 0;
+#about-container .resume-container {
+    overflow: hidden;
 }
 
-#about-container .resume-download {
+#about-container .resume-container .resume-download {
     float: right;
 }
 

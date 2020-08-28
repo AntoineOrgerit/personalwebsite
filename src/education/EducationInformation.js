@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import { Typography, Button, Collapse, Tag } from 'antd';
 import { BranchesOutlined, LaptopOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 
 import './EducationInformation.css';
 
@@ -64,7 +65,7 @@ export default function EducationInformation(props) {
                                     <Paragraph className={"education-projects" + (detail.experience ? " is-followed" : "")}><BranchesOutlined /> {t("education.projectsHeading")}:&nbsp;&nbsp;
                                         {
                                             detail.linkedProjects.map((project, pIndex) => (
-                                                <Tag key={pIndex} type="link" size="small"><a href={project.link}>{project.title}</a></Tag>
+                                                <Tag key={pIndex} type="link" size="small"><HashLink smooth to={project.link}>{project.title}</HashLink></Tag>
                                             ))
                                         }
                                     </Paragraph>
@@ -74,7 +75,7 @@ export default function EducationInformation(props) {
                                     <Paragraph className="education-experience"><LaptopOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                                             detail.experience.map((internship, internshipIndex) => (
-                                                <Tag key={internshipIndex} type="link" size="small"><a href={internship.link}>{internship.title}</a></Tag>
+                                                <Tag key={internshipIndex} type="link" size="small"><HashLink smooth to={internship.link}>{internship.title}</HashLink></Tag>
                                             ))
                                         }
                                     </Paragraph>
@@ -96,7 +97,7 @@ export default function EducationInformation(props) {
             <Paragraph className={"education-projects" + (education.experience ? " is-followed" : "")}><BranchesOutlined /> {t("education.projectsHeading")}:&nbsp;&nbsp;
                                         {
                     education.linkedProjects.map((project, pIndex) => (
-                        <Tag key={pIndex} type="link" size="small"><a href={project.link}>{project.title}</a></Tag>
+                        <Tag key={pIndex} type="link" size="small"><HashLink smooth to={project.link}>{project.title}</HashLink></Tag>
                     ))
                 }
             </Paragraph>
@@ -106,7 +107,7 @@ export default function EducationInformation(props) {
             <Paragraph className="education-experience"><LaptopOutlined /> {t("education.experienceHeading")}:&nbsp;&nbsp;
                                         {
                     education.experience.map((internship, internshipIndex) => (
-                        <Tag key={internshipIndex} type="link" size="small"><a href={internship.link}>{internship.title}</a></Tag>
+                        <Tag key={internshipIndex} type="link" size="small"><HashLink smooth to={internship.link}>{internship.title}</HashLink></Tag>
                     ))
                 }
             </Paragraph>
