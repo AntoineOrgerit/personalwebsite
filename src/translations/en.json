@@ -25,7 +25,7 @@
                 "Scala",
                 "Android",
                 "RESTful API",
-                "Agile methods"
+                "Agile methodologiess"
             ]
         },
         "developerSection": {
@@ -75,7 +75,7 @@
                     "Spring Boot",
                     "Maven",
                     "Git",
-                    "Agile methods",
+                    "Agile methodologies",
                     "Android native",
                     "SQL",
                     "NoSQL",
@@ -149,7 +149,9 @@
                     "Spring Boot",
                     "JPA",
                     "Hibernate",
-                    "RESTful API"
+                    "RESTful API",
+                    "SQL",
+                    "JSON"
                 ]
             },
             {
@@ -188,7 +190,10 @@
                     "Android native",
                     "Java",
                     "Node.js",
-                    "UI design"
+                    "UI design",
+                    "User experience",
+                    "SQLite",
+                    "JSON"
                 ]
             },
             {
@@ -272,7 +277,7 @@
                                 "link": "/projects#plant-health-monitoring"
                             },
                             {
-                                "title": "State of the art: Hybrid documents and crossmedia interactions",
+                                "title": "State of the Art: Hybrid Documents and Crossmedia Interactions",
                                 "link": "/projects#research-paper"
                             }
                         ],
@@ -341,11 +346,12 @@
                 "type": "mobile",
                 "description": "This final year project as part of my master's degree was developed with 8 other students. The mobile app aims to geolocalise visitors of La Rochelle as part of a research project conducted by a PhD student, to later determine places of interest. An Android and an iOS native applications were developed while introducing gamification aspects to entice visitors to use the application without biasing its behaviour.",
                 "skills": [
-                    "Android native",
+                    "Android",
                     "Java",
                     "UI design",
                     "Agile methodologies",
-                    "GIS"
+                    "GIS",
+                    "Gamification"
                 ]
             },
             {
@@ -358,6 +364,7 @@
                     "PhoneGap",
                     "JavaScript",
                     "UI design",
+                    "SQLite",
                     "User experience",
                     "Gamification"
                 ]
@@ -392,7 +399,7 @@
             },
             {
                 "bookmark": "research-paper",
-                "title": "State of the art: Hybrid documents and crossmedia interactions",
+                "title": "State of the Art: Hybrid Documents and Crossmedia Interactions",
                 "type": "paper",
                 "description": "This research project aimed to determine a state of the art of different solutions around hybrid documents and crossmedia interaction (i.e. between physical and digital environments). Several projects and products were compared following different key aspects to better understand what makes an optimal crossmedia interaction.",
                 "skills": [

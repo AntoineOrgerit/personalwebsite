@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { Layout, Typography, Row, Col } from 'antd';
-import { LinkedinFilled, GithubFilled, MailOutlined, PhoneOutlined, GitlabOutlined, WhatsAppOutlined } from '@ant-design/icons';
+import { LinkedinFilled, GithubFilled, MailOutlined, GitlabOutlined, WhatsAppOutlined, MobileOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 
 import './Footer.css';
@@ -29,7 +29,7 @@ export default function Footer() {
                 <Col className="footer-contact-item" sm><a href="https://github.com/AntoineOrgerit" target="_blank" rel="noopener noreferrer"><GithubFilled /></a></Col>
                 <Col className="footer-contact-item" sm><a href="https://gitlab.com/AntoineOrgerit" target="_blank" rel="noopener noreferrer"><GitlabOutlined /></a></Col>
                 <Col className="footer-contact-item" sm><a href="mailto:orgerit.antoine@gmail.com"><MailOutlined /></a></Col>
-                <Col className="footer-contact-item" sm><a href="tel:+33678081825"><PhoneOutlined /></a></Col>
+                <Col className="footer-contact-item" sm><a href="tel:+33678081825"><MobileOutlined /></a></Col>
                 <Col className="footer-contact-item" sm><a href="https://wa.me/33678081825" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a></Col>
             </Row>
         </Text>

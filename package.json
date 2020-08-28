@@ -1,6 +1,24 @@
 {
   "name": "ao-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Personal website of Antoine Orgerit",
+  "keywords": [
+    "website",
+    "personal",
+    "antoine orgerit",
+    "resume"
+  ],
+  "homepage": "https://gitlab.com/AntoineOrgerit/personalwebsite",
+  "issues": {
+    "url": "https://gitlab.com/AntoineOrgerit/personalwebsite/-/issues",
+    "email": "orgerit.antoine@gmail.com"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Antoine Orgerit",
+    "email": "orgerit.antoine@gmail.com",
+    "url": "https://www.antoineorgerit.com"
+  },
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.2.1",

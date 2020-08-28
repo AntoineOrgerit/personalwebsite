@@ -6,11 +6,11 @@
 
 /* general style of experience layout */
 
-#experience-container .ant-timeline .ant-timeline-item {
-    padding-bottom: 2em;
+#experience-container .ant-timeline-item-left:not(:last-of-type) {
+    padding-bottom: 2.5em;
 }
 
-#experience-container .ant-timeline .ant-timeline-item-last .ant-timeline-item {
+#experience-container .ant-timeline .ant-timeline-item {
     padding-bottom: 0;
 }
 
@@ -36,7 +36,7 @@
 }
 
 #experience-container .ant-timeline .ant-timeline-item .ant-timeline-item-tail {
-    height: calc(100% - 20px);
+    height: calc(100% + 2.5em - 8px);
     top: 16px;
     left: calc(15.5% + 21px);
     border-width: 1.5px;

@@ -4,6 +4,6 @@
  * license that can be found in the LICENSE file.
  */
 
- #education-container .education-item:not(:last-of-type) {
+ #education-container > div:not(:last-of-type) {
      margin-bottom: 5em;
  }

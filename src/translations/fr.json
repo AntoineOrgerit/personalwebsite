@@ -149,7 +149,9 @@
                     "Spring Boot",
                     "JPA",
                     "Hibernate",
-                    "RESTful API"
+                    "RESTful API",
+                    "SQL",
+                    "JSON"
                 ]
             },
             {
@@ -167,7 +169,7 @@
                 "skills": [
                     "Java",
                     "JAXB",
-                    "Data modelling",
+                    "Modélisation de données",
                     "XML",
                     "JavaScript"
                 ]
@@ -188,7 +190,10 @@
                     "Android native",
                     "Java",
                     "Node.js",
-                    "UI design"
+                    "Conception d'interface",
+                    "Expérience utilsateur",
+                    "SQLite",
+                    "JSON"
                 ]
             },
             {
@@ -231,7 +236,7 @@
                         "link": "/projects#geoluciole"
                     },
                     {
-                        "title": "Découverte du Laboratoire L3i",
+                        "title": "Jeu Ubiquitaire du L3i",
                         "link": "/projects#l3i-game"
                     },
                     {
@@ -281,7 +286,7 @@
                         "link": "/projects#plant-health-monitoring"
                     },
                     {
-                        "title": "État de l'art : Documents hybrides et interaction crossmédia",
+                        "title": "État de l'Art : Documents Hybrides et Interaction Crossmédia",
                         "link": "/projects#research-paper"
                     }
                 ],
@@ -336,24 +341,26 @@
                 "type": "mobile",
                 "description": "Ce projet de fin d'études dans le cadre de mon Master a été dévelopé avec 8 autres étudiants. L'application vise à pouvoir géolocaliser des visiteurs de la ville de La Rochelle dans le cadre d'un projet de recherche d'une doctorante, permettant par la suite de déterminer de possibles lieux d'intérêts. Une application Android et iOS natives ont été conçues tout en introduisant certains aspects de gamification afin d'inciter les visiteurs à utiliser l'application sans pour autant biaiser leur comportement.",
                 "skills": [
-                    "Android native",
+                    "Android",
                     "Java",
-                    "UI design",
-                    "Agile methodologies",
-                    "GIS"
+                    "Conception d'interface",
+                    "Méthodes Agiles",
+                    "SIG",
+                    "Gamification"
                 ]
             },
             {
                 "bookmark": "l3i-game",
-                "title": "Découverte du Laboratoire L3i",
+                "title": "Jeu Ubiquitaire du L3i",
                 "numberPeople": 2,
                 "type": "mobile",
                 "description": "Dans le cadre d'un cours sur la mobilité, cette application mobile a été développée pour être utiliser lors des journées portes ouvertes du Laboratoire L3i. En utilisant des QR Codes placés devant les bureaux des différents chercheurs, les visiteurs peuvent alors découvrir les différents thèmes de recherche et projets tout en répondant à différentes questions à l'aide des informations données. Codée à l'aide de JavaScript et PhoneGap, un système de score est également présent pour augmenter l'intérêt de l'utilisateur.",
                 "skills": [
                     "PhoneGap",
                     "JavaScript",
-                    "UI design",
-                    "User experience",
+                    "SQLite",
+                    "Conception d'interface",
+                    "Experience utilisateur",
                     "Gamification"
                 ]
             },
@@ -367,7 +374,7 @@
                 "skills": [
                     "Electron",
                     "JavaScript",
-                    "API consumption",
+                    "Consommation d'API",
                     "HL7/FHIR"
                 ]
             },
@@ -382,18 +389,18 @@
                     "Node.js",
                     "IoT",
                     "Cordova",
-                    "Agile methodologies"
+                    "Méthodes Agiles"
                 ]
             },
             {
                 "bookmark": "research-paper",
-                "title": "État de l'art : Documents hybrides et interaction crossmédia",
+                "title": "État de l'Art : Documents Hybrides et Interaction Crossmédia",
                 "type": "paper",
                 "description": "Ce projet de recherche vise à déterminer un état de l'art de différente solutions autour des documents hybrides et de l'interaction crossmédia (entre environnements physiques et numériques). Plusieurs projets et produits ont été comparés suivant différentes caractéristiques clés afin de comprendre les éléments constituant une interaction crossmédia optimale.",
                 "skills": [
-                    "Critical thinking",
-                    "Research",
-                    "Redaction"
+                    "Esprit critique",
+                    "Recherche",
+                    "Rédaction"
                 ]
             }
         ]
