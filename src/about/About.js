@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { Typography, Row, Col, Tag, Button } from 'antd';
+import { Typography, Tag, Button } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { CommentOutlined, FileDoneOutlined, CodeOutlined, PushpinOutlined } from '@ant-design/icons';
 import ScrollAnimation from 'react-animate-on-scroll';
