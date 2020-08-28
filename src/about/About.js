@@ -30,7 +30,9 @@ export default function About() {
         <ScrollAnimation className="presentation-container" animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
             <Title level={4}><PushpinOutlined /> {t("about.presentation.heading")}</Title>
             <Paragraph>{t("about.presentation.content")}</Paragraph>
-            <Button className="resume-download" href={process.env.PUBLIC_URL + "/resume/resume_antoine_orgerit.pdf"} target="_blank">{t("about.presentation.resumeButton")}</Button>
+            <div className="resume-container">
+                <Button className="resume-download" href={process.env.PUBLIC_URL + "/resume/resume_antoine_orgerit.pdf"} target="_blank">{t("about.presentation.resumeButton")}</Button>
+            </div>
         </ScrollAnimation>
         <ScrollAnimation className="skills-section" animateIn="animate__fadeInUp" animateOnce={true} offset={0} duration={0.8}>
             <Title level={4}><CodeOutlined /> {t("about.knowledge.heading")}</Title>
