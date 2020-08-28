@@ -236,12 +236,16 @@
                         ],
                         "linkedProjects": [
                             {
-                                "title": "Archive Client for Patient File Consultation",
-                                "link": "#"
+                                "title": "Géoluciole mobile app",
+                                "link": "/projects#geoluciole"
                             },
                             {
-                                "title": "Géoluciole mobile app",
-                                "link": "#"
+                                "title": "L3i Laboratory Discovery Game",
+                                "link": "/projects#l3i-game"
+                            },
+                            {
+                                "title": "Archive Client for Patient File Consultation",
+                                "link": "/projects#archive-client"
                             }
                         ],
                         "experience": [
@@ -265,7 +269,11 @@
                         "linkedProjects": [
                             {
                                 "title": "Plant health care monitoring solution",
-                                "link": "#"
+                                "link": "/projects#plant-health-monitoring"
+                            },
+                            {
+                                "title": "State of the art: Hybrid documents and crossmedia interactions",
+                                "link": "/projects#research-paper"
                             }
                         ],
                         "experience": [
@@ -307,7 +315,93 @@
         ]
     },
     "projects": {
-        "heading": "Projects"
+        "heading": "Projects",
+        "more": {
+            "heading": "Source code and more projects on",
+            "conjunction": "and"
+        },
+        "items": [
+            {
+                "bookmark": "personal-website",
+                "title": "Personal website",
+                "type": "web",
+                "description": "My first project after graduating from University is the development of my personal website. Using ReactJS, it presents information about my studies, professional experiences and projects further than a usual resume, with which the overall theme is in line.",
+                "skills": [
+                    "ReactJS",
+                    "User experience",
+                    "UI design",
+                    "Continuous integration"
+                ]
+            },
+            {
+                "bookmark": "geoluciole",
+                "title": "Géoluciole mobile app",
+                "numberPeople": 9,
+                "endUser": "L3i Laboratory",
+                "type": "mobile",
+                "description": "This final year project as part of my master's degree was developed with 8 other students. The mobile app aims to geolocalise visitors of La Rochelle as part of a research project conducted by a PhD student, to later determine places of interest. An Android and an iOS native applications were developed while introducing gamification aspects to entice visitors to use the application without biasing its behaviour.",
+                "skills": [
+                    "Android native",
+                    "Java",
+                    "UI design",
+                    "Agile methodologies",
+                    "GIS"
+                ]
+            },
+            {
+                "bookmark": "l3i-game",
+                "title": "L3i Laboratory Discovery Game",
+                "numberPeople": 2,
+                "type": "mobile",
+                "description": "As part of a mobility course, this mobile application was developed to be used during the Open Days of the L3I Laboratory. Using several QR Codes displayed in front of researchers' offices, visitors are able to discover research topics and projects while trying to answer questions based on information provided. Coded with JavaScript and PhoneGap, a score system was introduced to grow interest.",
+                "skills": [
+                    "PhoneGap",
+                    "JavaScript",
+                    "UI design",
+                    "User experience",
+                    "Gamification"
+                ]
+            },
+            {
+                "bookmark": "archive-client",
+                "title": "Archive Client for Patient File Consultation",
+                "numberPeople": 4,
+                "endUser": "OpenXtrem",
+                "type": "desktop",
+                "description": "OpenXtrem company offers several healthcare solutions, one of them being the online platform MediBoard. Using this platform, an archive client was developed to download patient resources using the HL7 international standards and to upload linked documents (patient records, prescriptions...). This client comes as a desktop application thanks to Electron.",
+                "skills": [
+                    "Electron",
+                    "JavaScript",
+                    "API consumption",
+                    "HL7/FHIR"
+                ]
+            },
+            {
+                "bookmark": "plant-health-monitoring",
+                "title": "Plant health care monitoring solution",
+                "numberPeople": 12,
+                "endUser": "Cuculus GmbH",
+                "type": "global solution",
+                "description": "Using plant sensors retrieving environment information, a global solution was conceived to allow end-users to monitor plant health care. A server developed with Node.js was able to retrieve data sent by the sensors, while a mobile web app was able to request the server to retrieve the information for a specific plant. Notifications were also sent by the application in case of necessary action (humidity, sun exposition...).",
+                "skills": [
+                    "Node.js",
+                    "IoT",
+                    "Cordova",
+                    "Agile methodologies"
+                ]
+            },
+            {
+                "bookmark": "research-paper",
+                "title": "State of the art: Hybrid documents and crossmedia interactions",
+                "type": "paper",
+                "description": "This research project aimed to determine a state of the art of different solutions around hybrid documents and crossmedia interaction (i.e. between physical and digital environments). Several projects and products were compared following different key aspects to better understand what makes an optimal crossmedia interaction.",
+                "skills": [
+                    "Critical thinking",
+                    "Research",
+                    "Redaction"
+                ]
+            }
+        ]
     },
     "contact": {
         "information": {
