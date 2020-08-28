@@ -7,7 +7,7 @@
 import React from 'react';
 import { Typography, Row, Col } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { GitlabOutlined, MailOutlined, LinkedinOutlined, GithubOutlined, PhoneOutlined, WhatsAppOutlined } from '@ant-design/icons';
+import { GitlabOutlined, MailOutlined, LinkedinOutlined, GithubOutlined, WhatsAppOutlined, MobileOutlined } from '@ant-design/icons';
 
 import './Contact.css';
 
@@ -58,7 +58,7 @@ export default function Contact() {
                             <Col xs={24} sm={12} md={24} lg={14} style={{paddingBottom: "0"}}>
                                 <Title level={4}>{t("contact.phoneHeading")}</Title>
                                 <Row className="phone-links-container" gutter={[18, 0]}>
-                                    <Col className="phone-link"><a href="tel:+33678081825"><PhoneOutlined /> +33 (0)6 78 08 18 25</a></Col>
+                                    <Col className="phone-link"><a href="tel:+33678081825"><MobileOutlined /> +33 (0)6 78 08 18 25</a></Col>
                                     <Col><a href="https://wa.me/33678081825" target="_blank" rel="noopener noreferrer"><WhatsAppOutlined /></a></Col>
                                 </Row>
                             </Col>
