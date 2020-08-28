@@ -1,0 +1,38 @@
+/**
+ * Copyright 2020 Antoine Orgerit. All rights reserved.
+ * Use of this source code is governed by a BSD-style
+ * license that can be found in the LICENSE file.
+ */
+
+/* style of project headers */
+
+.project-information-container .project-information-header {
+    margin-bottom: 1em;
+}
+
+.project-information-container .project-information-header h4 {
+    margin-bottom: 0;
+}
+
+.project-information-container .project-information-header h4 > span[role="img"] {
+    margin-right: 10px;
+}
+
+.project-information-container .project-information-header .project-additional-information {
+    display: flex;
+    align-items: center;
+}
+
+.project-information-container .project-information-header .project-additional-information>span {
+    color: #B9A563;
+}
+
+.project-information-container .project-information-header .project-additional-information>span>span:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+/* project skills style */
+
+.project-information-container .project-skills > span {
+    margin-top: 3px;
+}
