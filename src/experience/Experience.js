@@ -32,7 +32,7 @@ export default function Experience() {
      * @param {String} period the period to format
      */
     const formatPeriod = period => {
-        return period.replace(/(?<=\w\.|\w)\s(?=\d+)/g, "\xa0");
+        return period.replace(/\s(?=\d+)/g, "\xa0");
     };
 
     return <div id="experience-container">
