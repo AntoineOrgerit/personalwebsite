@@ -93,7 +93,7 @@ class SideNavigation extends React.Component {
         let activeKey = this.getActivePathname(location.pathname);
 
         return <div id="side-navigation-container" className={this.state.menuCollapsed ? "collapsed" : ""} ref={this.menuRef}>
-            <Sider collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="9.5em" onCollapse={this.handleOnCollapse} collapsed={this.state.menuCollapsed}>
+            <Sider collapsible collapsedWidth={0} defaultCollapsed={true} trigger={<MenuOutlined />} width="11em" onCollapse={this.handleOnCollapse} collapsed={this.state.menuCollapsed}>
                 <Menu mode="vertical" selectedKeys={[activeKey]}>
                     <Menu.Item key="about" onClick={this.toggleCollapsed}><span><Link to="/about">{t("menu.about")}</Link></span></Menu.Item>
                     <Menu.Item key="experience" onClick={this.toggleCollapsed}><span><Link to="/experience">{t("menu.experience")}</Link></span></Menu.Item>

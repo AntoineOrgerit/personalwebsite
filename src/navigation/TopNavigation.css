@@ -7,17 +7,25 @@
 /* general top navigation container style */
 
 #top-navigation-container {
+    padding: 0;
+}
+
+#top-navigation-container .sticky-container {
     padding: 0 10%;
     border-bottom: 1px solid #B9A563;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
 }
 
 @media all and (max-width: 1026px) {
-    #top-navigation-container {
+    #top-navigation-container .sticky-container  {
         padding: 0 calc((100% - 807px)/2);
     }
 }
 
-#top-navigation-container>div {
+#top-navigation-container .sticky-container >div {
     max-width: 950px;
     margin: 0 auto;
 }
@@ -117,10 +125,10 @@
 }
 
 @media all and (max-width: 876px) {
-    #top-navigation-container {
+    #top-navigation-container .sticky-container  {
         padding: 0;
     }
-    #top-navigation-container>.ant-row>.ant-col:not(.top-navigation-logo-container) {
+    #top-navigation-container .sticky-container >.ant-row>.ant-col:not(.top-navigation-logo-container) {
         display: none;
     }
     #top-navigation-container .top-navigation-logo-container {

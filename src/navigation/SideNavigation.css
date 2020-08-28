@@ -7,22 +7,23 @@
 /* general container style */
 
 #side-navigation-container {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: #141414;
-    top: 64px;
-    height: calc(100% - 64px);
+    top: 65px;
+    height: calc(100vh - 65px);
 }
 
 /* trigger button style */
 
 #side-navigation-container .ant-layout-sider-zero-width-trigger {
-    position: absolute;
-    top: -53px;
+    position: fixed;
+    top: 11px;
     left: 11px;
     width: 42px;
     background-color: transparent;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    z-index: 2;
 }
 
 @media all and (min-width: 877px) {
@@ -38,10 +39,19 @@
 /* updating content accessibility on visible menu */
 
 #side-navigation-container:not(.collapsed)+.ant-layout-content {
-    opacity: 0.5;
     pointer-events: none;
     user-select: none;
-    overflow: hidden;
+    position: relative;
+}
+
+#side-navigation-container:not(.collapsed)+.ant-layout-content::after {
+    position: fixed;
+    content: "";
+    width: 100vw;
+    height: calc(100vh - 65px);
+    background-color: black;
+    opacity: 0.5;
+    top: 65px;
 }
 
 /* general menu and menu item style */

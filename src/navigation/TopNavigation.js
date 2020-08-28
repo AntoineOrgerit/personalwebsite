@@ -41,24 +41,26 @@ export default function TopNavigation() {
     };
 
     return <Header id="top-navigation-container">
-        <Row justify="space-between" align="middle">
-            <Col className="top-navigation-logo-container top-navigation-element" md>
-                <Link to="/"><Icon component={LogoMiniSVG} /><Title>Antoine Orger<span className="name-it-highlight">it</span></Title></Link>
-            </Col>
-            <Col md>
-                <Row>
-                    <MenuItem link="/about" title={t("menu.about")} />
-                    <MenuItem link="/experience" title={t("menu.experience")} />
-                    <MenuItem link="/education" title={t("menu.education")} />
-                    <MenuItem link="/projects" title={t("menu.projects")} />
-                </Row>
-            </Col>
-            <Col md>
-                <Row>
-                    <MenuItem link="/contact" title="Contact" />
-                    <Col className="top-navigation-element" xs><LanguageSelection /></Col>
-                </Row>
-            </Col>
-        </Row>
+        <div className="sticky-container">
+            <Row justify="space-between" align="middle">
+                <Col className="top-navigation-logo-container top-navigation-element" md>
+                    <Link to="/"><Icon component={LogoMiniSVG} /><Title>Antoine Orger<span className="name-it-highlight">it</span></Title></Link>
+                </Col>
+                <Col md>
+                    <Row>
+                        <MenuItem link="/about" title={t("menu.about")} />
+                        <MenuItem link="/experience" title={t("menu.experience")} />
+                        <MenuItem link="/education" title={t("menu.education")} />
+                        <MenuItem link="/projects" title={t("menu.projects")} />
+                    </Row>
+                </Col>
+                <Col md>
+                    <Row>
+                        <MenuItem link="/contact" title="Contact" />
+                        <Col className="top-navigation-element" xs><LanguageSelection /></Col>
+                    </Row>
+                </Col>
+            </Row>
+        </div>
     </Header>;
 }
