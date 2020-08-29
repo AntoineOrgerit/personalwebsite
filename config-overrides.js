@@ -8,7 +8,12 @@ const { override } = require('customize-cra');
 const cspHtmlWebpackPlugin = require("csp-html-webpack-plugin");
 
 const cspConfigPolicy = {
-    'default-src': "'self'",
+    'default-src': [
+        "'self'",
+        "'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='",
+        "'sha256-PW3IrjGlgjZRfI1qWJjbTFU4f0SFG0u+FQBX5X9iUrc='",
+        "'sha256-DOu86drLfwUr1Wcsx/wxfqAogK7tFvJGjVmF/300H/M='"
+    ],
     'base-uri': "'self'",
     'object-src': "'none'",
     'script-src': ["'self'"],
